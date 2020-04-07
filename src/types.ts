@@ -12,6 +12,8 @@ export interface ICatchProp {
   setSortBy: (heading: keyof ICatch) => void;
   sortAsc: boolean;
   setSortAsc: (asc: boolean) => void;
+  month: number;
+  hour: number;
   showOnlyCurrentMonth: boolean;
   showOnlyCurrentHour: boolean;
 }

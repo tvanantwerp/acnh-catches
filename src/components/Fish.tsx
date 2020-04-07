@@ -8,6 +8,8 @@ const Fish = ({
   setSortBy,
   sortAsc,
   setSortAsc,
+  month,
+  hour,
   showOnlyCurrentMonth,
   showOnlyCurrentHour,
 }: ICatchProp) => {
