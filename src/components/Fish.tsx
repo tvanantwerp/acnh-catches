@@ -6,10 +6,23 @@ import fishes from '../data/fish.json';
 const Fish = ({
   sortBy,
   setSortBy,
+  sortAsc,
+  setSortAsc,
   showOnlyCurrentMonth,
   showOnlyCurrentHour,
 }: ICatchProp) => {
   const headings: string[] = Object.keys(fishes[0]);
+  let theFishes = fishes.sort((a, b): number => {
+    if (sortAsc) {
+      if (a[sortBy] > b[sortBy]) return 1;
+      if (a[sortBy] < b[sortBy]) return -1;
+    } else if (!sortAsc) {
+      if (a[sortBy] > b[sortBy]) return -1;
+      if (a[sortBy] < b[sortBy]) return 1;
+    }
+    return 0;
+  });
+
   return (
     <table>
       <thead>
@@ -17,7 +30,14 @@ const Fish = ({
           {headings.map((heading: string) => (
             <th
               key={`heading-${heading}`}
-              onClick={() => setSortBy(heading as keyof ICatch)}
+              onClick={() => {
+                if ((heading as keyof ICatch) === sortBy) {
+                  setSortAsc(!sortAsc);
+                } else {
+                  setSortAsc(true);
+                  setSortBy(heading as keyof ICatch);
+                }
+              }}
             >
               {heading}
             </th>
@@ -25,7 +45,7 @@ const Fish = ({
         </tr>
       </thead>
       <tbody>
-        {fishes.map((fish: ICatch) => {
+        {theFishes.map((fish: ICatch) => {
           return (
             <tr key={`fish-${fish.name}`}>
               {headings.map((heading) => {
