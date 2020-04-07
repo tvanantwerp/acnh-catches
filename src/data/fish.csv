@@ -1,81 +1,81 @@
-﻿name,location,size,price,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec
-Bitterling,River,Smallest,900,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,true,true,false,false,false,false,false,false,true,true
-Pale Chub,River,Smallest,160,false,false,false,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,true,true,true,true,true,true,true,true,true,true,true,true
-Crucian Carp,River,Small,160,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
-Dace,River,Medium,240,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
-Carp,Pond,Large,300,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
-Koi,Pond,Large,4000,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
-Goldfish,Pond,Smallest,1300,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
-Pop-eyed Goldfish,Pond,Smallest,1300,false,false,false,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,true,true,true,true,true,true,true,true,true,true,true,true
-Ranchu Goldfish,Pond,Small,4500,false,false,false,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,true,true,true,true,true,true,true,true,true,true,true,true
-Killifish,Pond,Smallest,300,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,true,true,true,true,true,false,false,false,false
-Crawfish,Pond,Small,200,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,true,true,true,true,true,true,false,false,false
-Soft-shelled Turtle,River,Large,3750,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,true,true,false,false,false
-Snapping Turtle,River,X Large,5000,true,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,false,false,false,true,true,true,true,true,true,true,false,false
-Tadpole,Pond,Smallest,100,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,true,true,true,true,true,false,false,false,false,false
-Frog,Pond,Small,120,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,true,true,true,true,false,false,false,false
-Freshwater Goby,River,Small,400,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
-Loach,River,Small,400,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,true,true,true,false,false,false,false,false,false,false
-Catfish,Pond,Large,800,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,false,true,true,true,true,true,true,false,false
-Giant Snakehead,Pond,X Large,5500,false,false,false,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,false,false,false,false
-Bluegill,River,Small,180,false,false,false,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,true,true,true,true,true,true,true,true,true,true,true,true
-Yellow Perch,River,Medium,300,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true,true
-Black Bass,River,Large,400,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
-Tilapia,River,Medium,800,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,true,true,true,true,true,false,false
-Pike,River,X Large,1800,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,false,true,true,true,true
-Pond Smelt,River,Small,500,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,false,false,true
-Sweetfish,River,Medium,900,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true,true,false,false,false
-Cherry Salmon,River (Clifftop),Medium,1000,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,true,true,true,true,false,false,true,true,true,false
-Char,River (Clifftop),Medium,3800,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,true,true,true,true,false,false,true,true,true,false
-Golden Trout,River (Clifftop),Medium,15000,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,true,true,true,true,false,false,true,true,true,false
-Stringfish,River (Clifftop),Largest,15000,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,false,true
-Salmon,River (mouth),Large,700,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,false,true,false,false,false
-King Salmon,River (mouth),Largest,1800,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,false,true,false,false,false
-Mitten Crab,River,Small,2000,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,false,true,true,true,false
-Guppy,River,Smallest,1300,false,false,false,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false
-Nibble Fish,River,Small,1500,false,false,false,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,true,false,false,false
-Angelfish,River,Small,3000,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,true,true,true,true,true,true,true,false,false
-Betta,River,Small,2500,false,false,false,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,false,false,false,true,true,true,true,true,true,true,false,false
-Neon Tetra,River,Smallest,500,false,false,false,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false
-Rainbowfish,River,Small,800,false,false,false,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,true,true,false,false
-Piranha,River,Small,2500,true,true,true,true,true,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,false,true,true,true,false,false,false,false,false,true,true,true,true,false,false,false
-Arowana,River,Large,10000,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,false,false,true,true,true,true,false,false,false
-Dorado,River,X Large,15000,false,false,false,false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,true,true,true,true,false,false,false
-Gar,Pond,Largest,6000,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,false,false,true,true,true,true,false,false,false
-Arapaima,River,Largest,10000,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,false,false,true,true,true,true,false,false,false
-Saddled Bichir,River,Large,4000,true,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,false,false,false,false,false,true,true,true,true,false,false,false
-Sturgeon,River (mouth),Largest,10000,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,true,true,true,true
-Sea Butterfly,Sea,Smallest,1000,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,false,true
-Sea Horse,Sea,Smallest,1100,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,true,true,true,true,true,true,true,true,false
-Clown Fish,Sea,Smallest,650,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,true,true,true,true,true,true,false,false,false
-Surgeonfish,Sea,Small,1000,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,true,true,true,true,true,true,false,false,false
-Butterfly Fish,Sea,Small,1000,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,true,true,true,true,true,true,false,false,false
-Napoleonfish,Sea,Largest,10000,false,false,false,false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,false,true,true,false,false,false,false
-Zebra Turkeyfish,Sea,Medium,500,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,true,true,true,true,true,true,true,true,false
-Blowfish,Sea,Medium,5000,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,false,false,false,false,false,false,false,false,true,true
-Puffer Fish,Sea,Medium,250,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true,true,false,false,false
-Anchovy,Sea,Small,200,false,false,false,false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,true,true,true,true,true,true,true,true,true,true,true,true
-Horse Mackerel,Sea,Small,150,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
-Barred Knifejaw,Sea,Medium,5000,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,true,true,true,true,true,true,true,true,true,false
-Sea Bass,Sea,X Large,400,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
-Red Snapper,Sea,Large,3000,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
-Dab,Sea,Medium,300,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,true,true,true
-Olive Flounder,Sea,Large,800,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
-Squid,Sea,Medium,500,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,true
-Moray Eel,Sea,Narrow,2000,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,true,true,true,false,false
-Ribbon Eel,Sea,Narrow,600,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,true,true,true,true,true,false,false
-Tuna,Pier,Largest,7000,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true
-Blue Marlin,Pier,Largest,10000,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,true,true,true,false,true,true
-Giant Trevally,Pier,Large,4500,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,true,true,true,true,true,true,false,false
-Mahi-mahi,Sea,Large,6000,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,true,true,true,true,true,true,false,false
-Ocean Sunfish,Sea,Largest (Fin),4000,false,false,false,false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,false,true,true,true,false,false,false
-Ray,Sea,X Large,3000,false,false,false,false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,false,false,true,true,true,true,false
-Saw Shark,Sea,Largest (Fin),12000,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,false,false,true,true,true,true,false,false,false
-Hammerhead Shark,Sea,Largest (Fin),8000,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,false,false,true,true,true,true,false,false,false
-Great White Shark,Sea,Largest (Fin),15000,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true,true,true,true,true,true,true,false,false,false,false,false,true,true,true,true,false,false,false
-Whale Shark,Sea,Largest (Fin),13000,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,true,true,true,true,false,false,false
-Suckerfish,Sea,Large (Fin),1500,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,true,true,true,true,false,false,false
-Football Fish,Sea,Large,2500,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,true,true
-Oarfish,Sea,Largest,9000,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false,false,true
-Barreleye,Sea,Small,15000,true,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
-Coelacanth,Sea (rainy days),Largest,15000,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
+﻿name,location,size,price,hours,months
+Bitterling,River,Smallest,900,yyyyyyyyyyyyyyyyyyyyyyyy,yyynnnnnnnyy
+Pale Chub,River,Smallest,160,nnnnnnnnnyyyyyyyynnnnnnn,yyyyyyyyyyyy
+Crucian Carp,River,Small,160,yyyyyyyyyyyyyyyyyyyyyyyy,yyyyyyyyyyyy
+Dace,River,Medium,240,yyyyyyyyyynnnnnnyyyyyyyy,yyyyyyyyyyyy
+Carp,Pond,Large,300,yyyyyyyyyyyyyyyyyyyyyyyy,yyyyyyyyyyyy
+Koi,Pond,Large,4000,yyyyyyyyyynnnnnnyyyyyyyy,yyyyyyyyyyyy
+Goldfish,Pond,Smallest,1300,yyyyyyyyyyyyyyyyyyyyyyyy,yyyyyyyyyyyy
+Pop-eyed Goldfish,Pond,Smallest,1300,nnnnnnnnnyyyyyyyynnnnnnn,yyyyyyyyyyyy
+Ranchu Goldfish,Pond,Small,4500,nnnnnnnnnyyyyyyyynnnnnnn,yyyyyyyyyyyy
+Killifish,Pond,Smallest,300,yyyyyyyyyyyyyyyyyyyyyyyy,nnnyyyyynnnn
+Crawfish,Pond,Small,200,yyyyyyyyyyyyyyyyyyyyyyyy,nnnyyyyyynnn
+Soft-shelled Turtle,River,Large,3750,yyyyyyyyyynnnnnnyyyyyyyy,nnnnnnnyynnn
+Snapping Turtle,River,X Large,5000,yyyyynnnnnnnnnnnnnnnnyyy,nnnyyyyyyynn
+Tadpole,Pond,Smallest,100,yyyyyyyyyyyyyyyyyyyyyyyy,nnyyyyynnnnn
+Frog,Pond,Small,120,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnyyyynnnn
+Freshwater Goby,River,Small,400,yyyyyyyyyynnnnnnyyyyyyyy,yyyyyyyyyyyy
+Loach,River,Small,400,yyyyyyyyyyyyyyyyyyyyyyyy,nnyyynnnnnnn
+Catfish,Pond,Large,800,yyyyyyyyyynnnnnnyyyyyyyy,nnnnyyyyyynn
+Giant Snakehead,Pond,X Large,5500,nnnnnnnnnyyyyyyyynnnnnnn,nnnnnyyynnnn
+Bluegill,River,Small,180,nnnnnnnnnyyyyyyyynnnnnnn,yyyyyyyyyyyy
+Yellow Perch,River,Medium,300,yyyyyyyyyyyyyyyyyyyyyyyy,yyynnnnnnyyy
+Black Bass,River,Large,400,yyyyyyyyyyyyyyyyyyyyyyyy,yyyyyyyyyyyy
+Tilapia,River,Medium,800,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnnyyyyynn
+Pike,River,X Large,1800,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnnnnnyyyy
+Pond Smelt,River,Small,500,yyyyyyyyyyyyyyyyyyyyyyyy,yynnnnnnnnny
+Sweetfish,River,Medium,900,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnnnyyynnn
+Cherry Salmon,River (Clifftop),Medium,1000,yyyyyyyyyynnnnnnyyyyyyyy,nnyyyynnyyyn
+Char,River (Clifftop),Medium,3800,yyyyyyyyyynnnnnnyyyyyyyy,nnyyyynnyyyn
+Golden Trout,River (Clifftop),Medium,15000,yyyyyyyyyynnnnnnyyyyyyyy,nnyyyynnyyyn
+Stringfish,River (Clifftop),Largest,15000,yyyyyyyyyynnnnnnyyyyyyyy,yyynnnnnnnny
+Salmon,River (mouth),Large,700,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnnnnnynnn
+King Salmon,River (mouth),Largest,1800,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnnnnnynnn
+Mitten Crab,River,Small,2000,yyyyyyyyyynnnnnnyyyyyyyy,nnnnnnnnyyyn
+Guppy,River,Smallest,1300,nnnnnnnnnyyyyyyyynnnnnnn,nnnyyyyyyyyn
+Nibble Fish,River,Small,1500,nnnnnnnnnyyyyyyyynnnnnnn,nnnnyyyyynnn
+Angelfish,River,Small,3000,yyyyyyyyyynnnnnnyyyyyyyy,nnnyyyyyyynn
+Betta,River,Small,2500,nnnnnnnnnyyyyyyyynnnnnnn,nnnyyyyyyynn
+Neon Tetra,River,Smallest,500,nnnnnnnnnyyyyyyyynnnnnnn,nnnyyyyyyyyn
+Rainbowfish,River,Small,800,nnnnnnnnnyyyyyyyynnnnnnn,nnnnyyyyyynn
+Piranha,River,Small,2500,yyyyynnnnyyyyyyyynnnnyyy,nnnnnyyyynnn
+Arowana,River,Large,10000,yyyyyyyyyynnnnnnyyyyyyyy,nnnnnyyyynnn
+Dorado,River,X Large,15000,nnnnyyyyyyyyyyyyyyyyyynn,nnnnnyyyynnn
+Gar,Pond,Largest,6000,yyyyyyyyyynnnnnnyyyyyyyy,nnnnnyyyynnn
+Arapaima,River,Largest,10000,yyyyyyyyyynnnnnnyyyyyyyy,nnnnnyyyynnn
+Saddled Bichir,River,Large,4000,yyyyynnnnnnnnnnnnnnnnyyy,nnnnnyyyynnn
+Sturgeon,River (mouth),Largest,10000,yyyyyyyyyyyyyyyyyyyyyyyy,yyynnnnnyyyy
+Sea Butterfly,Sea,Smallest,1000,yyyyyyyyyyyyyyyyyyyyyyyy,yyynnnnnnnny
+Sea Horse,Sea,Smallest,1100,yyyyyyyyyyyyyyyyyyyyyyyy,nnnyyyyyyyyn
+Clown Fish,Sea,Smallest,650,yyyyyyyyyyyyyyyyyyyyyyyy,nnnyyyyyynnn
+Surgeonfish,Sea,Small,1000,yyyyyyyyyyyyyyyyyyyyyyyy,nnnyyyyyynnn
+Butterfly Fish,Sea,Small,1000,yyyyyyyyyyyyyyyyyyyyyyyy,nnnyyyyyynnn
+Napoleonfish,Sea,Largest,10000,nnnnyyyyyyyyyyyyyyyyyynn,nnnnnnyynnnn
+Zebra Turkeyfish,Sea,Medium,500,yyyyyyyyyyyyyyyyyyyyyyyy,nnnyyyyyyyyn
+Blowfish,Sea,Medium,5000,yyyyynnnnnnnnnnnnnyyyyyy,yynnnnnnnnyy
+Puffer Fish,Sea,Medium,250,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnnnyyynnn
+Anchovy,Sea,Small,200,nnnnyyyyyyyyyyyyyyyyyynn,yyyyyyyyyyyy
+Horse Mackerel,Sea,Small,150,yyyyyyyyyyyyyyyyyyyyyyyy,yyyyyyyyyyyy
+Barred Knifejaw,Sea,Medium,5000,yyyyyyyyyyyyyyyyyyyyyyyy,nnyyyyyyyyyn
+Sea Bass,Sea,X Large,400,yyyyyyyyyyyyyyyyyyyyyyyy,yyyyyyyyyyyy
+Red Snapper,Sea,Large,3000,yyyyyyyyyyyyyyyyyyyyyyyy,yyyyyyyyyyyy
+Dab,Sea,Medium,300,yyyyyyyyyyyyyyyyyyyyyyyy,yyyynnnnnyyy
+Olive Flounder,Sea,Large,800,yyyyyyyyyyyyyyyyyyyyyyyy,yyyyyyyyyyyy
+Squid,Sea,Medium,500,yyyyyyyyyyyyyyyyyyyyyyyy,yyyyyyyynnny
+Moray Eel,Sea,Narrow,2000,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnnnnyyynn
+Ribbon Eel,Sea,Narrow,600,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnnyyyyynn
+Tuna,Pier,Largest,7000,yyyyyyyyyyyyyyyyyyyyyyyy,yyyynnnnnnyy
+Blue Marlin,Pier,Largest,10000,yyyyyyyyyyyyyyyyyyyyyyyy,yyyynnyyynyy
+Giant Trevally,Pier,Large,4500,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnyyyyyynn
+Mahi-mahi,Sea,Large,6000,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnyyyyyynn
+Ocean Sunfish,Sea,Largest (Fin),4000,nnnnyyyyyyyyyyyyyyyyyynn,nnnnnnyyynnn
+Ray,Sea,X Large,3000,nnnnyyyyyyyyyyyyyyyyyynn,nnnnnnnyyyyn
+Saw Shark,Sea,Largest (Fin),12000,yyyyyyyyyynnnnnnyyyyyyyy,nnnnnyyyynnn
+Hammerhead Shark,Sea,Largest (Fin),8000,yyyyyyyyyynnnnnnyyyyyyyy,nnnnnyyyynnn
+Great White Shark,Sea,Largest (Fin),15000,yyyyyyyyyynnnnnnyyyyyyyy,nnnnnyyyynnn
+Whale Shark,Sea,Largest (Fin),13000,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnnyyyynnn
+Suckerfish,Sea,Large (Fin),1500,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnnyyyynnn
+Football Fish,Sea,Large,2500,yyyyyyyyyynnnnnnyyyyyyyy,yyynnnnnnnyy
+Oarfish,Sea,Largest,9000,yyyyyyyyyyyyyyyyyyyyyyyy,yyyyynnnnnny
+Barreleye,Sea,Small,15000,yyyyynnnnnnnnnnnnnnnnyyy,yyyyyyyyyyyy
+Coelacanth,Sea (rainy days),Largest,15000,yyyyyyyyyyyyyyyyyyyyyyyy,yyyyyyyyyyyy
