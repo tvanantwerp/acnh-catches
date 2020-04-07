@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { ICatch, ICatchProp } from '../types';
+import { inCurrentMonth, inCurrentHour } from '../utilities';
 import fishes from '../data/fish.json';
 
 const Fish = ({
@@ -14,16 +15,29 @@ const Fish = ({
   showOnlyCurrentHour,
 }: ICatchProp) => {
   const headings: string[] = Object.keys(fishes[0]);
-  let theFishes = fishes.sort((a, b): number => {
-    if (sortAsc) {
-      if (a[sortBy] > b[sortBy]) return 1;
-      if (a[sortBy] < b[sortBy]) return -1;
-    } else if (!sortAsc) {
-      if (a[sortBy] > b[sortBy]) return -1;
-      if (a[sortBy] < b[sortBy]) return 1;
-    }
-    return 0;
-  });
+  let theFishes = fishes
+    .filter((fish) => {
+      if (showOnlyCurrentHour && !inCurrentHour(hour, fish.hours)) {
+        return false;
+      }
+      return true;
+    })
+    .filter((fish) => {
+      if (showOnlyCurrentMonth && !inCurrentMonth(month, fish.months)) {
+        return false;
+      }
+      return true;
+    })
+    .sort((a, b): number => {
+      if (sortAsc) {
+        if (a[sortBy] > b[sortBy]) return 1;
+        if (a[sortBy] < b[sortBy]) return -1;
+      } else if (!sortAsc) {
+        if (a[sortBy] > b[sortBy]) return -1;
+        if (a[sortBy] < b[sortBy]) return 1;
+      }
+      return 0;
+    });
 
   return (
     <table>

@@ -60,7 +60,7 @@ const App: React.FC = () => {
         setSortBy={setSortBy}
         setSortAsc={setSortAsc}
         month={new Date(date).getMonth() + 1}
-        hour={new Date(time).getHours()}
+        hour={+time.split(':')[0]}
         showOnlyCurrentHour={showOnlyCurrentHour}
         showOnlyCurrentMonth={showOnlyCurrentMonth}
       />
