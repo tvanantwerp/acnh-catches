@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
 
 import { ICatch } from './types';
+import { Theme, GlobalStyle } from './Theme';
 import Fish from './components/Fish';
 
 const App: React.FC = () => {
@@ -17,7 +19,8 @@ const App: React.FC = () => {
   const [showOnlyCurrentHour, setShowOnlyCurrentHour] = useState(false);
 
   return (
-    <div>
+    <ThemeProvider theme={Theme}>
+      <GlobalStyle />
       <label>
         Show Only Current Month?{' '}
         <input
@@ -64,7 +67,7 @@ const App: React.FC = () => {
         showOnlyCurrentHour={showOnlyCurrentHour}
         showOnlyCurrentMonth={showOnlyCurrentMonth}
       />
-    </div>
+    </ThemeProvider>
   );
 };
 

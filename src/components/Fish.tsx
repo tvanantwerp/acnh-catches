@@ -1,8 +1,13 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import { ICatch, ICatchProp } from '../types';
 import { inCurrentMonth, inCurrentHour } from '../utilities';
 import fishes from '../data/fish.json';
+
+const Heading = styled.th`
+  text-transform: capitalize;
+`;
 
 const Fish = ({
   sortBy,
@@ -17,16 +22,14 @@ const Fish = ({
   const headings: string[] = Object.keys(fishes[0]);
   let theFishes = fishes
     .filter((fish) => {
-      if (showOnlyCurrentHour && !inCurrentHour(hour, fish.hours)) {
-        return false;
-      }
-      return true;
+      return showOnlyCurrentHour && !inCurrentHour(hour, fish.hours)
+        ? false
+        : true;
     })
     .filter((fish) => {
-      if (showOnlyCurrentMonth && !inCurrentMonth(month, fish.months)) {
-        return false;
-      }
-      return true;
+      return showOnlyCurrentMonth && !inCurrentMonth(month, fish.months)
+        ? false
+        : true;
     })
     .sort((a, b): number => {
       if (sortAsc) {
@@ -44,7 +47,7 @@ const Fish = ({
       <thead>
         <tr>
           {headings.map((heading: string) => (
-            <th
+            <Heading
               key={`heading-${heading}`}
               onClick={() => {
                 if ((heading as keyof ICatch) === sortBy) {
@@ -56,7 +59,7 @@ const Fish = ({
               }}
             >
               {heading}
-            </th>
+            </Heading>
           ))}
         </tr>
       </thead>
