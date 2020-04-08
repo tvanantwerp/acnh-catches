@@ -9,6 +9,7 @@ export interface ICatch {
 
 export interface ICatchProp {
   data: any;
+  northOrSouth: string;
   sortBy: keyof ICatch;
   setSortBy: (heading: keyof ICatch) => void;
   sortAsc: boolean;

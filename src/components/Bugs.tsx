@@ -32,7 +32,7 @@ const Heading = styled.th`
   text-transform: capitalize;
 `;
 
-const Fish = ({
+const Bugs = ({
   data,
   northOrSouth,
   sortBy,
@@ -45,14 +45,14 @@ const Fish = ({
   showOnlyCurrentHour,
 }: ICatchProp) => {
   const headings: string[] = data.columns;
-  let theFishes = data
-    .filter((fish: ICatch) => {
-      return showOnlyCurrentHour && !inCurrentHour(hour, fish.hours)
+  let theBugs = data
+    .filter((bug: ICatch) => {
+      return showOnlyCurrentHour && !inCurrentHour(hour, bug.hours)
         ? false
         : true;
     })
-    .filter((fish: ICatch) => {
-      return showOnlyCurrentMonth && !inCurrentMonth(month, fish.months)
+    .filter((bug: ICatch) => {
+      return showOnlyCurrentMonth && !inCurrentMonth(month, bug.months)
         ? false
         : true;
     })
@@ -83,31 +83,31 @@ const Fish = ({
         </tr>
       </thead>
       <tbody>
-        {theFishes.map((fish: ICatch) => {
+        {theBugs.map((bugs: ICatch) => {
           return (
-            <tr key={`fish-${fish.name}`}>
+            <tr key={`bugs-${bugs.name}`}>
               {headings.map((heading) => {
                 return (
                   <td
-                    key={`fish-${fish.name}-${heading}`}
+                    key={`bugs-${bugs.name}-${heading}`}
                     style={{
                       textAlign: heading === 'price' ? 'right' : 'left',
                     }}
                   >
                     {heading === 'hours' ? (
                       <Timeline
-                        theCatch={fish.name}
-                        times={fish[heading]}
+                        theCatch={bugs.name}
+                        times={bugs[heading]}
                         currentTime={hour}
                       />
                     ) : heading === 'months' ? (
                       <Timeline
-                        theCatch={fish.name}
-                        times={fish[heading]}
+                        theCatch={bugs.name}
+                        times={bugs[heading]}
                         currentTime={month - 1}
                       />
                     ) : (
-                      fish[heading as keyof ICatch]
+                      bugs[heading as keyof ICatch]
                     )}
                   </td>
                 );
@@ -120,4 +120,4 @@ const Fish = ({
   );
 };
 
-export default Fish;
+export default Bugs;

@@ -7,6 +7,7 @@ import { ICatch } from './types';
 import { Theme, GlobalStyle } from './Theme';
 import Controls from './components/Controls';
 import Fish from './components/Fish';
+import Bugs from './components/Bugs';
 
 const Container = styled.div`
   max-width: 1000px;
@@ -23,6 +24,8 @@ const App: React.FC = () => {
   const now = new Date();
   const [fish, setFish] = useState<any | null>(null);
   const [bugs, setBugs] = useState<any | null>(null);
+  const [fishOrBugs, setFishOrBugs] = useState('fish');
+  const [northOrSouth, setNorthOrSouth] = useState('north');
   const [sortBy, setSortBy] = useState('name' as keyof ICatch);
   const [sortAsc, setSortAsc] = useState(true);
   const [date, setDate] = useState(
@@ -56,6 +59,10 @@ const App: React.FC = () => {
       <GlobalStyle />
       <Container>
         <Controls
+          fishOrBugs={fishOrBugs}
+          setFishOrBugs={setFishOrBugs}
+          northOrSouth={northOrSouth}
+          setNorthOrSouth={setNorthOrSouth}
           date={date}
           setDate={setDate}
           time={time}
@@ -65,9 +72,24 @@ const App: React.FC = () => {
           setShowOnlyCurrentMonth={setShowOnlyCurrentMonth}
           setShowOnlyCurrentHour={setShowOnlyCurrentHour}
         ></Controls>
-        {fish && (
+        {fishOrBugs === 'fish' && fish && (
           <Fish
             data={fish}
+            northOrSouth={northOrSouth}
+            sortBy={sortBy}
+            sortAsc={sortAsc}
+            setSortBy={setSortBy}
+            setSortAsc={setSortAsc}
+            month={new Date(date).getMonth() + 1}
+            hour={+time.split(':')[0]}
+            showOnlyCurrentHour={showOnlyCurrentHour}
+            showOnlyCurrentMonth={showOnlyCurrentMonth}
+          />
+        )}
+        {fishOrBugs === 'bugs' && bugs && (
+          <Bugs
+            data={bugs}
+            northOrSouth={northOrSouth}
             sortBy={sortBy}
             sortAsc={sortAsc}
             setSortBy={setSortBy}
