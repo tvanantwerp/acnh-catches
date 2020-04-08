@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { DefaultTheme } from 'styled-components';
 
 interface ITimes {
   fish: string;
@@ -8,6 +8,7 @@ interface ITimes {
 }
 
 interface IHour {
+  theme: DefaultTheme;
   yes: boolean;
   currentTime: boolean;
 }
@@ -19,14 +20,14 @@ const TimesContainer = styled.div`
 `;
 
 const StyledTime = styled.div`
-  background-color: ${({ yes, currentTime }: IHour) =>
+  background-color: ${({ theme, yes, currentTime }: IHour) =>
     yes
       ? currentTime
-        ? '#00ff00'
-        : '#00cc00'
+        ? '#9cd08f'
+        : theme.teaGreen
       : currentTime
-      ? '#dedede'
-      : '#cdcdcd'};
+      ? '#cccccc'
+      : '#dedede'};
   flex: 1;
 `;
 

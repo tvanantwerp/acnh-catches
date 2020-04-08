@@ -1,10 +1,11 @@
 import { DefaultTheme, createGlobalStyle } from 'styled-components';
 
 export const Theme: DefaultTheme = {
-  backgroundColor: '#fdbfc4',
+  backgroundColor: '#79b791',
   darkBrown: '#450000',
   fontFamily: '"Asap", sans-serif',
-  lightGreen: '#83baa8',
+  lightGreen: '#9ad2cb',
+  teaGreen: '#d7ebba',
 };
 
 export const GlobalStyle = createGlobalStyle`

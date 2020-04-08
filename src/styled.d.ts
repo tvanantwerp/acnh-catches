@@ -8,5 +8,6 @@ declare module 'styled-components' {
     darkBrown: string;
     fontFamily: string;
     lightGreen: string;
+    teaGreen: string;
   }
 }
