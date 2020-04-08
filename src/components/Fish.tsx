@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { ICatch, ICatchProp } from '../types';
-import { inCurrentMonth, inCurrentHour } from '../utilities';
+import { inCurrentMonth, inCurrentHour, sortCatches } from '../utilities';
 import Timeline from './Timeline';
 import fishes from '../data/fish.json';
 
@@ -32,16 +32,7 @@ const Fish = ({
         ? false
         : true;
     })
-    .sort((a, b): number => {
-      if (sortAsc) {
-        if (a[sortBy] > b[sortBy]) return 1;
-        if (a[sortBy] < b[sortBy]) return -1;
-      } else if (!sortAsc) {
-        if (a[sortBy] > b[sortBy]) return -1;
-        if (a[sortBy] < b[sortBy]) return 1;
-      }
-      return 0;
-    });
+    .sort((a, b) => sortCatches(sortAsc, sortBy, hour, month, a, b));
 
   return (
     <table>
