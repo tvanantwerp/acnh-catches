@@ -42,11 +42,11 @@ const App: React.FC = () => {
 
   useEffect(() => {
     const fetchFish = async () => {
-      const result = await axios.get('/data/fish.csv');
+      const result = await axios.get('data/fish.csv');
       setFish(csvParse(result.data));
     };
     const fetchBugs = async () => {
-      const result = await axios.get('/data/bugs.csv');
+      const result = await axios.get('data/bugs.csv');
       setBugs(csvParse(result.data));
     };
     fetchFish();
