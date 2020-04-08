@@ -4,7 +4,6 @@ import styled, { DefaultTheme } from 'styled-components';
 import { ICatch, ICatchProp } from '../types';
 import { inCurrentMonth, inCurrentHour, sortCatches } from '../utilities';
 import Timeline from './Timeline';
-import fishes from '../data/fish.json';
 
 const Table = styled.table`
   background-color: white;
@@ -34,6 +33,7 @@ const Heading = styled.th`
 `;
 
 const Fish = ({
+  data,
   sortBy,
   setSortBy,
   sortAsc,
@@ -43,19 +43,21 @@ const Fish = ({
   showOnlyCurrentMonth,
   showOnlyCurrentHour,
 }: ICatchProp) => {
-  const headings: string[] = Object.keys(fishes[0]);
-  let theFishes = fishes
-    .filter((fish) => {
+  const headings: string[] = data.columns;
+  let theFishes = data
+    .filter((fish: ICatch) => {
       return showOnlyCurrentHour && !inCurrentHour(hour, fish.hours)
         ? false
         : true;
     })
-    .filter((fish) => {
+    .filter((fish: ICatch) => {
       return showOnlyCurrentMonth && !inCurrentMonth(month, fish.months)
         ? false
         : true;
     })
-    .sort((a, b) => sortCatches(sortAsc, sortBy, hour, month, a, b));
+    .sort((a: ICatch, b: ICatch) =>
+      sortCatches(sortAsc, sortBy, hour, month, a, b)
+    );
 
   return (
     <Table>

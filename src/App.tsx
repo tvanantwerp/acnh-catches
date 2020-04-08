@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
+import axios from 'axios';
+import { csvParse } from 'd3-dsv';
 
 import { ICatch } from './types';
 import { Theme, GlobalStyle } from './Theme';
@@ -19,6 +21,8 @@ const Container = styled.div`
 
 const App: React.FC = () => {
   const now = new Date();
+  const [fish, setFish] = useState<any | null>(null);
+  const [bugs, setBugs] = useState<any | null>(null);
   const [sortBy, setSortBy] = useState('name' as keyof ICatch);
   const [sortAsc, setSortAsc] = useState(true);
   const [date, setDate] = useState(
@@ -34,6 +38,19 @@ const App: React.FC = () => {
   const [showOnlyCurrentMonth, setShowOnlyCurrentMonth] = useState(false);
   const [showOnlyCurrentHour, setShowOnlyCurrentHour] = useState(false);
 
+  useEffect(() => {
+    const fetchFish = async () => {
+      const result = await axios.get('/data/fish.csv');
+      setFish(csvParse(result.data));
+    };
+    const fetchBugs = async () => {
+      const result = await axios.get('/data/bugs.csv');
+      setBugs(csvParse(result.data));
+    };
+    fetchFish();
+    fetchBugs();
+  }, []);
+
   return (
     <ThemeProvider theme={Theme}>
       <GlobalStyle />
@@ -48,16 +65,19 @@ const App: React.FC = () => {
           setShowOnlyCurrentMonth={setShowOnlyCurrentMonth}
           setShowOnlyCurrentHour={setShowOnlyCurrentHour}
         ></Controls>
-        <Fish
-          sortBy={sortBy}
-          sortAsc={sortAsc}
-          setSortBy={setSortBy}
-          setSortAsc={setSortAsc}
-          month={new Date(date).getMonth() + 1}
-          hour={+time.split(':')[0]}
-          showOnlyCurrentHour={showOnlyCurrentHour}
-          showOnlyCurrentMonth={showOnlyCurrentMonth}
-        />
+        {fish && (
+          <Fish
+            data={fish}
+            sortBy={sortBy}
+            sortAsc={sortAsc}
+            setSortBy={setSortBy}
+            setSortAsc={setSortAsc}
+            month={new Date(date).getMonth() + 1}
+            hour={+time.split(':')[0]}
+            showOnlyCurrentHour={showOnlyCurrentHour}
+            showOnlyCurrentMonth={showOnlyCurrentMonth}
+          />
+        )}
       </Container>
     </ThemeProvider>
   );
