@@ -26,6 +26,12 @@ export const inCurrentHour = (currentHour: number, hours: string) => {
   return false;
 };
 
+function simpleSort(a: string | number, b: string | number): number {
+  if (a > b) return 1;
+  if (a < b) return -1;
+  return 0;
+}
+
 export const sortCatches = (
   sortAsc: boolean,
   sortBy: keyof ICatch,
@@ -53,7 +59,10 @@ export const sortCatches = (
       relevantB === (sortAsc ? 'y' : 'n')
     )
       return 1;
-    return +b['price' as keyof ICatch] - +a['price' as keyof ICatch];
+    const priceDiff: number = b.price - a.price;
+    return priceDiff !== 0 ? priceDiff : simpleSort(a.name, b.name);
   }
-  return sortAsc ? +a[sortBy] - +b[sortBy] : +b[sortBy] - +a[sortBy];
+  return sortAsc
+    ? simpleSort(a[sortBy], b[sortBy])
+    : simpleSort(b[sortBy], a[sortBy]);
 };
