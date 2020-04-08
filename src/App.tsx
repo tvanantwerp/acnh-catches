@@ -35,44 +35,16 @@ const App: React.FC = () => {
     <ThemeProvider theme={Theme}>
       <GlobalStyle />
       <Container>
-        <Controls>
-          <label>
-            Show Only Current Month?{' '}
-            <input
-              type="checkbox"
-              checked={showOnlyCurrentMonth}
-              onChange={() => setShowOnlyCurrentMonth(!showOnlyCurrentMonth)}
-            />
-          </label>
-          <label>
-            Show Only Current Time?{' '}
-            <input
-              type="checkbox"
-              checked={showOnlyCurrentHour}
-              onChange={() => setShowOnlyCurrentHour(!showOnlyCurrentHour)}
-            />
-          </label>
-          <label>
-            Choose the date{' '}
-            <input
-              type="date"
-              value={date}
-              onChange={(e) => {
-                setDate(e.target.value);
-              }}
-            />
-          </label>
-          <label>
-            Choose the time{' '}
-            <input
-              type="time"
-              value={time}
-              onChange={(e) => {
-                setTime(e.target.value);
-              }}
-            />
-          </label>
-        </Controls>
+        <Controls
+          date={date}
+          setDate={setDate}
+          time={time}
+          setTime={setTime}
+          showOnlyCurrentMonth={showOnlyCurrentMonth}
+          showOnlyCurrentHour={showOnlyCurrentHour}
+          setShowOnlyCurrentMonth={setShowOnlyCurrentMonth}
+          setShowOnlyCurrentHour={setShowOnlyCurrentHour}
+        ></Controls>
         <Fish
           sortBy={sortBy}
           sortAsc={sortAsc}
