@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { DefaultTheme } from 'styled-components';
 
 interface ITimes {
-  fish: string;
+  theCatch: string;
   times: string;
   currentTime: number;
 }
@@ -31,13 +31,13 @@ const StyledTime = styled.div`
   flex: 1;
 `;
 
-const Times = ({ fish, times, currentTime }: ITimes) => {
+const Times = ({ theCatch, times, currentTime }: ITimes) => {
   return (
     <TimesContainer>
       {times.split('').map((time, i) => {
         return (
           <StyledTime
-            key={`time-${fish}-${time}-${i}`}
+            key={`time-${theCatch}-${time}-${i}`}
             yes={time === 'y'}
             currentTime={currentTime === i}
           />

@@ -47,8 +47,8 @@ export const sortCatches = (
     let currentTime: number = 0;
     if (sortBy === ('hours' as keyof ICatch)) currentTime = hour;
     if (sortBy === ('months' as keyof ICatch)) currentTime = month - 1;
-    const relevantA: string = a[sortBy].toString().split('')[currentTime];
-    const relevantB: string = b[sortBy].toString().split('')[currentTime];
+    const relevantA: string = a[sortBy]!.toString().split('')[currentTime];
+    const relevantB: string = b[sortBy]!.toString().split('')[currentTime];
     if (
       relevantA === (sortAsc ? 'y' : 'n') &&
       relevantB === (sortAsc ? 'n' : 'y')
@@ -63,6 +63,10 @@ export const sortCatches = (
     return priceDiff !== 0 ? priceDiff : simpleSort(a.name, b.name);
   }
   return sortAsc
-    ? simpleSort(a[sortBy], b[sortBy])
-    : simpleSort(b[sortBy], a[sortBy]);
+    ? simpleSort(a[sortBy]!, b[sortBy]!)
+    : simpleSort(b[sortBy]!, a[sortBy]!);
 };
+
+export function hemisphereAdjustment(months: string, hemisphere: string) {
+  return hemisphere === 'north' ? months : months.slice(6) + months.slice(0, 6);
+}

@@ -2,9 +2,13 @@ import React from 'react';
 import styled, { DefaultTheme } from 'styled-components';
 
 import { ICatch, ICatchProp } from '../types';
-import { inCurrentMonth, inCurrentHour, sortCatches } from '../utilities';
+import {
+  inCurrentMonth,
+  inCurrentHour,
+  sortCatches,
+  hemisphereAdjustment,
+} from '../utilities';
 import Timeline from './Timeline';
-import fishes from '../data/fish.json';
 
 const Table = styled.table`
   background-color: white;
@@ -33,7 +37,9 @@ const Heading = styled.th`
   text-transform: capitalize;
 `;
 
-const Fish = ({
+const Catches = ({
+  data,
+  northOrSouth,
   sortBy,
   setSortBy,
   sortAsc,
@@ -43,19 +49,25 @@ const Fish = ({
   showOnlyCurrentMonth,
   showOnlyCurrentHour,
 }: ICatchProp) => {
-  const headings: string[] = Object.keys(fishes[0]);
-  let theFishes = fishes
-    .filter((fish) => {
-      return showOnlyCurrentHour && !inCurrentHour(hour, fish.hours)
+  const headings: string[] = data.columns;
+  let theCatches = data
+    .filter((theCatch: ICatch) => {
+      return showOnlyCurrentHour && !inCurrentHour(hour, theCatch.hours)
         ? false
         : true;
     })
-    .filter((fish) => {
-      return showOnlyCurrentMonth && !inCurrentMonth(month, fish.months)
+    .filter((theCatch: ICatch) => {
+      return showOnlyCurrentMonth &&
+        !inCurrentMonth(
+          month,
+          hemisphereAdjustment(theCatch.months, northOrSouth)
+        )
         ? false
         : true;
     })
-    .sort((a, b) => sortCatches(sortAsc, sortBy, hour, month, a, b));
+    .sort((a: ICatch, b: ICatch) =>
+      sortCatches(sortAsc, sortBy, hour, month, a, b)
+    );
 
   return (
     <Table>
@@ -80,31 +92,34 @@ const Fish = ({
         </tr>
       </thead>
       <tbody>
-        {theFishes.map((fish: ICatch) => {
+        {theCatches.map((theCatch: ICatch) => {
           return (
-            <tr key={`fish-${fish.name}`}>
+            <tr key={`theCatches-${theCatch.name}`}>
               {headings.map((heading) => {
                 return (
                   <td
-                    key={`fish-${fish.name}-${heading}`}
+                    key={`theCatches-${theCatch.name}-${heading}`}
                     style={{
                       textAlign: heading === 'price' ? 'right' : 'left',
                     }}
                   >
                     {heading === 'hours' ? (
                       <Timeline
-                        fish={fish.name}
-                        times={fish[heading]}
+                        theCatch={theCatch.name}
+                        times={theCatch[heading]}
                         currentTime={hour}
                       />
                     ) : heading === 'months' ? (
                       <Timeline
-                        fish={fish.name}
-                        times={fish[heading]}
+                        theCatch={theCatch.name}
+                        times={hemisphereAdjustment(
+                          theCatch[heading],
+                          northOrSouth
+                        )}
                         currentTime={month - 1}
                       />
                     ) : (
-                      fish[heading as keyof ICatch]
+                      theCatch[heading as keyof ICatch]
                     )}
                   </td>
                 );
@@ -117,4 +132,4 @@ const Fish = ({
   );
 };
 
-export default Fish;
+export default Catches;
