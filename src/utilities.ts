@@ -66,3 +66,7 @@ export const sortCatches = (
     ? simpleSort(a[sortBy]!, b[sortBy]!)
     : simpleSort(b[sortBy]!, a[sortBy]!);
 };
+
+export function hemisphereAdjustment(months: string, hemisphere: string) {
+  return hemisphere === 'north' ? months : months.slice(6) + months.slice(0, 6);
+}

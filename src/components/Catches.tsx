@@ -32,7 +32,7 @@ const Heading = styled.th`
   text-transform: capitalize;
 `;
 
-const Fish = ({
+const Catches = ({
   data,
   northOrSouth,
   sortBy,
@@ -45,14 +45,14 @@ const Fish = ({
   showOnlyCurrentHour,
 }: ICatchProp) => {
   const headings: string[] = data.columns;
-  let theFishes = data
-    .filter((fish: ICatch) => {
-      return showOnlyCurrentHour && !inCurrentHour(hour, fish.hours)
+  let theCatches = data
+    .filter((theCatch: ICatch) => {
+      return showOnlyCurrentHour && !inCurrentHour(hour, theCatch.hours)
         ? false
         : true;
     })
-    .filter((fish: ICatch) => {
-      return showOnlyCurrentMonth && !inCurrentMonth(month, fish.months)
+    .filter((theCatch: ICatch) => {
+      return showOnlyCurrentMonth && !inCurrentMonth(month, theCatch.months)
         ? false
         : true;
     })
@@ -83,31 +83,31 @@ const Fish = ({
         </tr>
       </thead>
       <tbody>
-        {theFishes.map((fish: ICatch) => {
+        {theCatches.map((theCatch: ICatch) => {
           return (
-            <tr key={`fish-${fish.name}`}>
+            <tr key={`theCatches-${theCatch.name}`}>
               {headings.map((heading) => {
                 return (
                   <td
-                    key={`fish-${fish.name}-${heading}`}
+                    key={`theCatches-${theCatch.name}-${heading}`}
                     style={{
                       textAlign: heading === 'price' ? 'right' : 'left',
                     }}
                   >
                     {heading === 'hours' ? (
                       <Timeline
-                        theCatch={fish.name}
-                        times={fish[heading]}
+                        theCatch={theCatch.name}
+                        times={theCatch[heading]}
                         currentTime={hour}
                       />
                     ) : heading === 'months' ? (
                       <Timeline
-                        theCatch={fish.name}
-                        times={fish[heading]}
+                        theCatch={theCatch.name}
+                        times={theCatch[heading]}
                         currentTime={month - 1}
                       />
                     ) : (
-                      fish[heading as keyof ICatch]
+                      theCatch[heading as keyof ICatch]
                     )}
                   </td>
                 );
@@ -120,4 +120,4 @@ const Fish = ({
   );
 };
 
-export default Fish;
+export default Catches;
