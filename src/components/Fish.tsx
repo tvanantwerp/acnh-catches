@@ -12,6 +12,7 @@ const Table = styled.table`
   border-radius: 8px;
   border-spacing: 1rem 0.5rem;
   padding: 1rem;
+  width: 100%;
 `;
 
 interface IHeading {
