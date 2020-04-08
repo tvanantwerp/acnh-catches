@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { ICatch, ICatchProp } from '../types';
 import { inCurrentMonth, inCurrentHour } from '../utilities';
-import Hours from './Hours';
+import Timeline from './Timeline';
 import fishes from '../data/fish.json';
 
 const Heading = styled.th`
@@ -72,7 +72,9 @@ const Fish = ({
                 return (
                   <td key={`fish-${fish.name}-${heading}`}>
                     {heading === 'hours' ? (
-                      <Hours hours={fish[heading]} currentHour={hour} />
+                      <Timeline times={fish[heading]} currentTime={hour} />
+                    ) : heading === 'months' ? (
+                      <Timeline times={fish[heading]} currentTime={month} />
                     ) : (
                       fish[heading as keyof ICatch]
                     )}
