@@ -72,9 +72,17 @@ const Fish = ({
                 return (
                   <td key={`fish-${fish.name}-${heading}`}>
                     {heading === 'hours' ? (
-                      <Timeline times={fish[heading]} currentTime={hour} />
+                      <Timeline
+                        fish={fish.name}
+                        times={fish[heading]}
+                        currentTime={hour}
+                      />
                     ) : heading === 'months' ? (
-                      <Timeline times={fish[heading]} currentTime={month} />
+                      <Timeline
+                        fish={fish.name}
+                        times={fish[heading]}
+                        currentTime={month - 1}
+                      />
                     ) : (
                       fish[heading as keyof ICatch]
                     )}
