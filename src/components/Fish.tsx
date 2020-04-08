@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { ICatch, ICatchProp } from '../types';
 import { inCurrentMonth, inCurrentHour } from '../utilities';
+import Hours from './Hours';
 import fishes from '../data/fish.json';
 
 const Heading = styled.th`
@@ -70,7 +71,11 @@ const Fish = ({
               {headings.map((heading) => {
                 return (
                   <td key={`fish-${fish.name}-${heading}`}>
-                    {fish[heading as keyof ICatch]}
+                    {heading === 'hours' ? (
+                      <Hours hours={fish[heading]} currentHour={hour} />
+                    ) : (
+                      fish[heading as keyof ICatch]
+                    )}
                   </td>
                 );
               })}
