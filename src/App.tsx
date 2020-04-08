@@ -1,9 +1,18 @@
 import React, { useState } from 'react';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 
 import { ICatch } from './types';
 import { Theme, GlobalStyle } from './Theme';
+import Controls from './components/Controls';
 import Fish from './components/Fish';
+
+const Container = styled.div`
+  display: grid;
+  grid-gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+`;
 
 const App: React.FC = () => {
   const now = new Date();
@@ -25,52 +34,56 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={Theme}>
       <GlobalStyle />
-      <label>
-        Show Only Current Month?{' '}
-        <input
-          type="checkbox"
-          checked={showOnlyCurrentMonth}
-          onChange={() => setShowOnlyCurrentMonth(!showOnlyCurrentMonth)}
+      <Container>
+        <Controls>
+          <label>
+            Show Only Current Month?{' '}
+            <input
+              type="checkbox"
+              checked={showOnlyCurrentMonth}
+              onChange={() => setShowOnlyCurrentMonth(!showOnlyCurrentMonth)}
+            />
+          </label>
+          <label>
+            Show Only Current Time?{' '}
+            <input
+              type="checkbox"
+              checked={showOnlyCurrentHour}
+              onChange={() => setShowOnlyCurrentHour(!showOnlyCurrentHour)}
+            />
+          </label>
+          <label>
+            Choose the date{' '}
+            <input
+              type="date"
+              value={date}
+              onChange={(e) => {
+                setDate(e.target.value);
+              }}
+            />
+          </label>
+          <label>
+            Choose the time{' '}
+            <input
+              type="time"
+              value={time}
+              onChange={(e) => {
+                setTime(e.target.value);
+              }}
+            />
+          </label>
+        </Controls>
+        <Fish
+          sortBy={sortBy}
+          sortAsc={sortAsc}
+          setSortBy={setSortBy}
+          setSortAsc={setSortAsc}
+          month={new Date(date).getMonth() + 1}
+          hour={+time.split(':')[0]}
+          showOnlyCurrentHour={showOnlyCurrentHour}
+          showOnlyCurrentMonth={showOnlyCurrentMonth}
         />
-      </label>
-      <label>
-        Show Only Current Time?{' '}
-        <input
-          type="checkbox"
-          checked={showOnlyCurrentHour}
-          onChange={() => setShowOnlyCurrentHour(!showOnlyCurrentHour)}
-        />
-      </label>
-      <label>
-        Choose the date{' '}
-        <input
-          type="date"
-          value={date}
-          onChange={(e) => {
-            setDate(e.target.value);
-          }}
-        />
-      </label>
-      <label>
-        Choose the time{' '}
-        <input
-          type="time"
-          value={time}
-          onChange={(e) => {
-            setTime(e.target.value);
-          }}
-        />
-      </label>
-      <Fish
-        sortBy={sortBy}
-        sortAsc={sortAsc}
-        setSortBy={setSortBy}
-        setSortAsc={setSortAsc}
-        month={new Date(date).getMonth() + 1}
-        hour={+time.split(':')[0]}
-        showOnlyCurrentHour={showOnlyCurrentHour}
-        showOnlyCurrentMonth={showOnlyCurrentMonth}
-      />
+      </Container>
     </ThemeProvider>
   );
 };

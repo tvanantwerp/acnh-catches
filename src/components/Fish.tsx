@@ -6,8 +6,21 @@ import { inCurrentMonth, inCurrentHour, sortCatches } from '../utilities';
 import Timeline from './Timeline';
 import fishes from '../data/fish.json';
 
+const Table = styled.table`
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  border-spacing: 1rem 0.5rem;
+  padding: 1rem;
+`;
+
 const Heading = styled.th`
+  background-color: ${(props) => props.theme.lightGreen};
+  border: 1px solid ${(props) => props.theme.lightGreen};
+  border-radius: 4px;
+  color: ${(props) => props.theme.darkBrown};
   cursor: pointer;
+  padding: 5px 0;
   text-transform: capitalize;
 `;
 
@@ -36,7 +49,7 @@ const Fish = ({
     .sort((a, b) => sortCatches(sortAsc, sortBy, hour, month, a, b));
 
   return (
-    <table>
+    <Table>
       <thead>
         <tr>
           {headings.map((heading: string) => (
@@ -90,7 +103,7 @@ const Fish = ({
           );
         })}
       </tbody>
-    </table>
+    </Table>
   );
 };
 
