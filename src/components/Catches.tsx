@@ -2,7 +2,12 @@ import React from 'react';
 import styled, { DefaultTheme } from 'styled-components';
 
 import { ICatch, ICatchProp } from '../types';
-import { inCurrentMonth, inCurrentHour, sortCatches } from '../utilities';
+import {
+  inCurrentMonth,
+  inCurrentHour,
+  sortCatches,
+  hemisphereAdjustment,
+} from '../utilities';
 import Timeline from './Timeline';
 
 const Table = styled.table`
@@ -52,7 +57,11 @@ const Catches = ({
         : true;
     })
     .filter((theCatch: ICatch) => {
-      return showOnlyCurrentMonth && !inCurrentMonth(month, theCatch.months)
+      return showOnlyCurrentMonth &&
+        !inCurrentMonth(
+          month,
+          hemisphereAdjustment(theCatch.months, northOrSouth)
+        )
         ? false
         : true;
     })
@@ -103,7 +112,10 @@ const Catches = ({
                     ) : heading === 'months' ? (
                       <Timeline
                         theCatch={theCatch.name}
-                        times={theCatch[heading]}
+                        times={hemisphereAdjustment(
+                          theCatch[heading],
+                          northOrSouth
+                        )}
                         currentTime={month - 1}
                       />
                     ) : (

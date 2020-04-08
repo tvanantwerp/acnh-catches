@@ -6,8 +6,7 @@ import { csvParse } from 'd3-dsv';
 import { ICatch } from './types';
 import { Theme, GlobalStyle } from './Theme';
 import Controls from './components/Controls';
-import Fish from './components/Fish';
-import Bugs from './components/Bugs';
+import Catches from './components/Catches';
 
 const Container = styled.div`
   max-width: 1000px;
@@ -73,7 +72,7 @@ const App: React.FC = () => {
           setShowOnlyCurrentHour={setShowOnlyCurrentHour}
         ></Controls>
         {fishOrBugs === 'fish' && fish && (
-          <Fish
+          <Catches
             data={fish}
             northOrSouth={northOrSouth}
             sortBy={sortBy}
@@ -87,7 +86,7 @@ const App: React.FC = () => {
           />
         )}
         {fishOrBugs === 'bugs' && bugs && (
-          <Bugs
+          <Catches
             data={bugs}
             northOrSouth={northOrSouth}
             sortBy={sortBy}
