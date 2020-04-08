@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { DefaultTheme } from 'styled-components';
 
 import { ICatch, ICatchProp } from '../types';
 import { inCurrentMonth, inCurrentHour, sortCatches } from '../utilities';
@@ -14,11 +14,19 @@ const Table = styled.table`
   padding: 1rem;
 `;
 
+interface IHeading {
+  selected: boolean;
+  theme: DefaultTheme;
+}
+
 const Heading = styled.th`
-  background-color: ${(props) => props.theme.lightGreen};
-  border: 1px solid ${(props) => props.theme.lightGreen};
+  background-color: ${({ theme, selected }: IHeading) =>
+    selected ? theme.teaGreen : theme.lightGreen};
+  border: 1px solid
+    ${({ theme, selected }: IHeading) =>
+      selected ? theme.teaGreen : theme.lightGreen};
   border-radius: 4px;
-  color: ${(props) => props.theme.darkBrown};
+  color: ${({ theme, selected }: IHeading) => theme.darkBrown};
   cursor: pointer;
   padding: 5px 0;
   text-transform: capitalize;
@@ -63,6 +71,7 @@ const Fish = ({
                   setSortBy(heading as keyof ICatch);
                 }
               }}
+              selected={sortBy === (heading as keyof ICatch)}
             >
               {heading}
             </Heading>
