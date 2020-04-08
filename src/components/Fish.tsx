@@ -7,6 +7,7 @@ import Timeline from './Timeline';
 import fishes from '../data/fish.json';
 
 const Heading = styled.th`
+  cursor: pointer;
   text-transform: capitalize;
 `;
 
@@ -61,7 +62,12 @@ const Fish = ({
             <tr key={`fish-${fish.name}`}>
               {headings.map((heading) => {
                 return (
-                  <td key={`fish-${fish.name}-${heading}`}>
+                  <td
+                    key={`fish-${fish.name}-${heading}`}
+                    style={{
+                      textAlign: heading === 'price' ? 'right' : 'left',
+                    }}
+                  >
                     {heading === 'hours' ? (
                       <Timeline
                         fish={fish.name}
