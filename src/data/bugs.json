@@ -1,0 +1,562 @@
+[
+  {
+    "name": "Common Butterfly",
+    "location": "Flying",
+    "price": 160,
+    "hours": "nnnnyyyyyyyyyyyyyyynnnnn",
+    "months": "yyyyyynnyyyy"
+  },
+  {
+    "name": "Yellow Butterfly",
+    "location": "Flying",
+    "price": 160,
+    "hours": "nnnnyyyyyyyyyyyyyyynnnnn",
+    "months": "nnyyyynnyynn"
+  },
+  {
+    "name": "Tiger Butterfly",
+    "location": "Flying",
+    "price": 240,
+    "hours": "nnnnyyyyyyyyyyyyyyynnnnn",
+    "months": "nnyyyyyyynnn"
+  },
+  {
+    "name": "Peacock Butterfly",
+    "location": "Flying by hybrid flowers",
+    "price": "2,500",
+    "hours": "nnnnyyyyyyyyyyyyyyynnnnn",
+    "months": "nnyyyynnnnnn"
+  },
+  {
+    "name": "Common Bluebottle",
+    "location": "Flying",
+    "price": 300,
+    "hours": "nnnnyyyyyyyyyyyyyyynnnnn",
+    "months": "nnnyyyyynnnn"
+  },
+  {
+    "name": "Paper Kite Butterfly",
+    "location": "Flying",
+    "price": "1,000",
+    "hours": "nnnnnnnnyyyyyyyyyyynnnnn",
+    "months": "yyyyyyyyyyyy"
+  },
+  {
+    "name": "Great Purple Emperor",
+    "location": "Flying",
+    "price": "3,000",
+    "hours": "nnnnyyyyyyyyyyyyyyynnnnn",
+    "months": "nnnnyyyynnnn"
+  },
+  {
+    "name": "Monach Butterfly",
+    "location": "Flying",
+    "price": 140,
+    "hours": "nnnnyyyyyyyyyyyyynnnnnnn",
+    "months": "nnnnnnnnyyyn"
+  },
+  {
+    "name": "Emperor Butterfly",
+    "location": "Flying",
+    "price": "4,000",
+    "hours": "yyyyyyyynnnnnnnnnyyyyyyy",
+    "months": "yyynnyyyynny"
+  },
+  {
+    "name": "Agrias Butterfly",
+    "location": "Flying",
+    "price": "3,000",
+    "hours": "nnnnnnnnyyyyyyyyynnnnnnn",
+    "months": "nnnyyyyyynnn"
+  },
+  {
+    "name": "Raja Brooke's Birdwing",
+    "location": "Flying by purple flowers",
+    "price": "2,500",
+    "hours": "nnnnnnnnyyyyyyyyynnnnnnn",
+    "months": "yynyyyyyynny"
+  },
+  {
+    "name": "Queen Alexandra's Birdwing",
+    "location": "Flying",
+    "price": "4,000",
+    "hours": "nnnnnnnnyyyyyyyynnnnnnnn",
+    "months": "nnnnyyyyynnn"
+  },
+  {
+    "name": "Moth",
+    "location": "Flying by light",
+    "price": 130,
+    "hours": "yyyynnnnnnnnnnnnnnnyyyyy",
+    "months": "yyyyyyyyyyyy"
+  },
+  {
+    "name": "Atlas Moth",
+    "location": "On trees",
+    "price": "3,000",
+    "hours": "yyyynnnnnnnnnnnnnnnyyyyy",
+    "months": "nnnyyyyyynnn"
+  },
+  {
+    "name": "Madagascan Sunset Moth",
+    "location": "Flying",
+    "price": "2,500",
+    "hours": "nnnnnnnnyyyyyyyynnnnnnnn",
+    "months": "nnnyyyyyynnn"
+  },
+  {
+    "name": "Long Locust",
+    "location": "On ground",
+    "price": 200,
+    "hours": "nnnnnnnnyyyyyyyyyyynnnnn",
+    "months": "nnnyyyyyyyyn"
+  },
+  {
+    "name": "Migratory Locust",
+    "location": "On ground",
+    "price": 600,
+    "hours": "nnnnnnnnyyyyyyyyyyynnnnn",
+    "months": "nnnnnnnyyyyn"
+  },
+  {
+    "name": "Rice Grasshopper",
+    "location": "On ground",
+    "price": 160,
+    "hours": "nnnnnnnnyyyyyyyyyyynnnnn",
+    "months": "nnnnnnyyyyyn"
+  },
+  {
+    "name": "Grasshopper",
+    "location": "On ground",
+    "price": 160,
+    "hours": "nnnnnnnnyyyyyyyyynnnnnnn",
+    "months": "nnnnnnyyynnn"
+  },
+  {
+    "name": "Cricket",
+    "location": "Dig at cricket noise",
+    "price": 130,
+    "hours": "yyyyyyyynnnnnnnnnyyyyyyy",
+    "months": "nnnnnnnnyyyn"
+  },
+  {
+    "name": "Bell Cricket",
+    "location": "On ground",
+    "price": 430,
+    "hours": "yyyyyyyynnnnnnnnnyyyyyyy",
+    "months": "nnnnnnnnyynn"
+  },
+  {
+    "name": "Mantis",
+    "location": "On flowers",
+    "price": 430,
+    "hours": "nnnnnnnnyyyyyyyyynnnnnnn",
+    "months": "nnyyyyyyyyyn"
+  },
+  {
+    "name": "Orchid Mantis",
+    "location": "On white flowers",
+    "price": "2,400",
+    "hours": "nnnnnnnnyyyyyyyyynnnnnnn",
+    "months": "nnyyyyyyyyyn"
+  },
+  {
+    "name": "Honeybee",
+    "location": "Flying",
+    "price": 200,
+    "hours": "nnnnnnnnyyyyyyyyynnnnnnn",
+    "months": "nnyyyyynnnnn"
+  },
+  {
+    "name": "Wasp",
+    "location": "Falls from shaking trees",
+    "price": "2,500",
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "yyyyyyyyyyyy"
+  },
+  {
+    "name": "Brown Cicada",
+    "location": "On trees",
+    "price": 250,
+    "hours": "nnnnnnnnyyyyyyyyynnnnnnn",
+    "months": "nnnnnnyynnnn"
+  },
+  {
+    "name": "Robust Cicada",
+    "location": "On trees",
+    "price": 300,
+    "hours": "nnnnnnnnyyyyyyyyynnnnnnn",
+    "months": "nnnnnnyynnnn"
+  },
+  {
+    "name": "Giant Cicada",
+    "location": "On trees",
+    "price": 600,
+    "hours": "nnnnnnnnyyyyyyyyynnnnnnn",
+    "months": "nnnnnnyynnnn"
+  },
+  {
+    "name": "Walker Cicada",
+    "location": "On trees",
+    "price": 400,
+    "hours": "nnnnnnnnyyyyyyyyynnnnnnn",
+    "months": "nnnnnnnyynnn"
+  },
+  {
+    "name": "Evening Cicada",
+    "location": "On trees",
+    "price": 660,
+    "hours": "nnnnyyyynnnnnnnnyyynnnnn",
+    "months": "nnnnnnyynnnn"
+  },
+  {
+    "name": "Cicada Shell",
+    "location": "On trees",
+    "price": 10,
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "nnnnnnyynnnn"
+  },
+  {
+    "name": "Red Dragonfly",
+    "location": "Flying",
+    "price": 180,
+    "hours": "nnnnnnnnyyyyyyyyyyynnnnn",
+    "months": "nnnnnnnnyynn"
+  },
+  {
+    "name": "Darner Dragonfly",
+    "location": "Flying",
+    "price": 230,
+    "hours": "nnnnnnnnyyyyyyyyynnnnnnn",
+    "months": "nnnyyyyyyynn"
+  },
+  {
+    "name": "Banded Dragonfly",
+    "location": "Flying",
+    "price": "4,500",
+    "hours": "nnnnnnnnyyyyyyyyynnnnnnn",
+    "months": "nnnnyyyyyynn"
+  },
+  {
+    "name": "Damselfly",
+    "location": "Flying",
+    "price": 500,
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "yynnnnnnnnyy"
+  },
+  {
+    "name": "Firefly",
+    "location": "Flying",
+    "price": 300,
+    "hours": "yyyynnnnnnnnnnnnnnnyyyyy",
+    "months": "nnnnnynnnnnn"
+  },
+  {
+    "name": "Mole Cricket",
+    "location": "Underground",
+    "price": 500,
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "yyyyynnnnnyy"
+  },
+  {
+    "name": "Pondskater",
+    "location": "Ponds",
+    "price": 130,
+    "hours": "nnnnnnnnyyyyyyyyyyynnnnn",
+    "months": "nnnnyyyyynnn"
+  },
+  {
+    "name": "Diving Beetle",
+    "location": "Ponds and rivers",
+    "price": 800,
+    "hours": "nnnnnnnnyyyyyyyyyyynnnnn",
+    "months": "nnnnyyyyynnn"
+  },
+  {
+    "name": "Giant Water Bug",
+    "location": "Ponds and rivers",
+    "price": "2,000",
+    "hours": "yyyyyyyynnnnnnnnnnnyyyyy",
+    "months": "nnnyyyyyynnn"
+  },
+  {
+    "name": "Stinkbug",
+    "location": "On flowers",
+    "price": 120,
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "nnyyyyyyyyyn"
+  },
+  {
+    "name": "Man-faced Stink Bug",
+    "location": "On flowers",
+    "price": "1,000",
+    "hours": "yyyyyyyynnnnnnnnnnnyyyyy",
+    "months": "nnyyyyyyyyyn"
+  },
+  {
+    "name": "Ladybug",
+    "location": "On flowers",
+    "price": 200,
+    "hours": "yyyyyyyynnnnnnnnnyyyyyyy",
+    "months": "nnyyyynnnynn"
+  },
+  {
+    "name": "Tiger Beetle",
+    "location": "On ground",
+    "price": "1,500",
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "nyyyyyyyyyyn"
+  },
+  {
+    "name": "Jewel Beetle",
+    "location": "On tree stumps",
+    "price": "2,400",
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "nnnyyyyynnnn"
+  },
+  {
+    "name": "Violin Beetle",
+    "location": "On tree stumps",
+    "price": 450,
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "nnnnyynnyyyn"
+  },
+  {
+    "name": "Citrus Long-horned Beetle",
+    "location": "On tree stumps",
+    "price": 350,
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "yyyyyyyyyyyy"
+  },
+  {
+    "name": "Rosalia Batesi Beetle",
+    "location": "On tree stumps",
+    "price": "3,000",
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "nnnnyyyyynnn"
+  },
+  {
+    "name": "Blue Weevil Beetle",
+    "location": "On palm trees",
+    "price": 800,
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "nnnnnnyynnnn"
+  },
+  {
+    "name": "Dung Beetle",
+    "location": "Pushing snowballs",
+    "price": "3,000",
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "yynnnnnnnnny"
+  },
+  {
+    "name": "Earth-boring Dung Beetle",
+    "location": "On ground",
+    "price": 300,
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "nnnnnnyyynnn"
+  },
+  {
+    "name": "Scarab Beetle",
+    "location": "On trees",
+    "price": "10,000",
+    "hours": "yyyyyyyynnnnnnnnnnnnnnny",
+    "months": "nnnnnnyynnnn"
+  },
+  {
+    "name": "Drone Beetle",
+    "location": "On trees",
+    "price": 200,
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "nnnnnyyynnnn"
+  },
+  {
+    "name": "Goliath Beetle",
+    "location": "On coconut trees",
+    "price": "8,000",
+    "hours": "yyyyyyyynnnnnnnnnyyyyyyy",
+    "months": "nnnnnyyyynnn"
+  },
+  {
+    "name": "Saw Stag",
+    "location": "On trees",
+    "price": "2,000",
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "nnnnnnyynnnn"
+  },
+  {
+    "name": "Miyama Stag",
+    "location": "On trees",
+    "price": "1,000",
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "nnnnnnyynnnn"
+  },
+  {
+    "name": "Giant Stag",
+    "location": "On trees",
+    "price": "10,000",
+    "hours": "yyyyyyyynnnnnnnnnnnnnnny",
+    "months": "nnnnnnyynnnn"
+  },
+  {
+    "name": "Rainbow Stag",
+    "location": "On trees",
+    "price": "6,000",
+    "hours": "yyyyyyyynnnnnnnnnnnyyyyy",
+    "months": "nnnnnyyyynnn"
+  },
+  {
+    "name": "Cyclommatus Stag",
+    "location": "On trees",
+    "price": "8,000",
+    "hours": "yyyyyyyynnnnnnnnnyyyyyyy",
+    "months": "nnnnnnyynnnn"
+  },
+  {
+    "name": "Golden Stag",
+    "location": "On trees",
+    "price": "12,000",
+    "hours": "yyyyyyyynnnnnnnnnyyyyyyy",
+    "months": "nnnnnnyynnnn"
+  },
+  {
+    "name": "Giraffe Stag",
+    "location": "On trees",
+    "price": "12,000",
+    "hours": "yyyyyyyynnnnnnnnnyyyyyyy",
+    "months": "nnnnnnyynnnn"
+  },
+  {
+    "name": "Horned Dynastid",
+    "location": "On trees",
+    "price": "1,350",
+    "hours": "yyyyyyyynnnnnnnnnyyyyyyy",
+    "months": "nnnnnnyynnnn"
+  },
+  {
+    "name": "Horned Atlas",
+    "location": "On trees",
+    "price": "8,000",
+    "hours": "yyyyyyyynnnnnnnnnyyyyyyy",
+    "months": "nnnnnnyynnnn"
+  },
+  {
+    "name": "Horned Elephant",
+    "location": "On trees",
+    "price": "8,000",
+    "hours": "yyyyyyyynnnnnnnnnyyyyyyy",
+    "months": "nnnnnnyynnnn"
+  },
+  {
+    "name": "Horned Herucles",
+    "location": "On trees",
+    "price": "12,000",
+    "hours": "yyyyyyyynnnnnnnnnyyyyyyy",
+    "months": "nnnnnnyynnnn"
+  },
+  {
+    "name": "Walking Stick",
+    "location": "On trees",
+    "price": 600,
+    "hours": "nnnnyyyynnnnnnnnnyynnnnn",
+    "months": "nnnnnnyyyyyn"
+  },
+  {
+    "name": "Walking Leaf",
+    "location": "Near trees, disguised as furniture leaf",
+    "price": 600,
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "nnnnnnyynnnn"
+  },
+  {
+    "name": "Bagworm",
+    "location": "Falls from shaking trees",
+    "price": 600,
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "yyyyyyyyyyyy"
+  },
+  {
+    "name": "Ant",
+    "location": "On rotten food",
+    "price": 80,
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "yyyyyyyyyyyy"
+  },
+  {
+    "name": "Hermit Crab",
+    "location": "Beach",
+    "price": "1,000",
+    "hours": "yyyyyyyynnnnnnnnnnnyyyyy",
+    "months": "yyyyyyyyyyyy"
+  },
+  {
+    "name": "Wharf Roach",
+    "location": "On rocks at beach",
+    "price": 200,
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "yyyyyyyyyyyy"
+  },
+  {
+    "name": "Fly",
+    "location": "On trash items",
+    "price": 60,
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "yyyyyyyyyyyy"
+  },
+  {
+    "name": "Mosquito",
+    "location": "Flying",
+    "price": 130,
+    "hours": "yyyynnnnnnnnnnnnnyyyyyyy",
+    "months": "nnnnnyyyynnn"
+  },
+  {
+    "name": "Flea",
+    "location": "On villagers",
+    "price": 70,
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "nnnyyyyyyyyn"
+  },
+  {
+    "name": "Snail",
+    "location": "On rocks (raining)",
+    "price": 250,
+    "hours": "yyyyyyyyyyyyyyyyyyyyyyyy",
+    "months": "yyyyyyyyyyyy"
+  },
+  {
+    "name": "Pill Bug",
+    "location": "Hit rocks",
+    "price": 250,
+    "hours": "yyyyyyyyyyyyyyyynnnnnnny",
+    "months": "yyyyyynnyyyy"
+  },
+  {
+    "name": "Centipede",
+    "location": "Hit rocks",
+    "price": 300,
+    "hours": "nnnnnnnnnnnnnnnnyyyyyyyn",
+    "months": "yyyyyynnyyyy"
+  },
+  {
+    "name": "Spider",
+    "location": "Falls from shaking trees",
+    "price": 480,
+    "hours": "yyyyyyyynnnnnnnnnnnyyyyy",
+    "months": "yyyyyyyyyyyy"
+  },
+  {
+    "name": "Tarantula",
+    "location": "On ground",
+    "price": "8,000",
+    "hours": "yyyynnnnnnnnnnnnnnnyyyyy",
+    "months": "yyyynnnnnnyy"
+  },
+  {
+    "name": "Scorpion",
+    "location": "On ground",
+    "price": "8,000",
+    "hours": "yyyynnnnnnnnnnnnnnnyyyyy",
+    "months": "nnnnyyyyyynn"
+  }
+]
