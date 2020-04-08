@@ -7,11 +7,14 @@ import Controls from './components/Controls';
 import Fish from './components/Fish';
 
 const Container = styled.div`
-  display: grid;
-  grid-gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
   width: 90%;
+
+  > * {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
 `;
 
 const App: React.FC = () => {
