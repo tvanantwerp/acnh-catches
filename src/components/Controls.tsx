@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import LabelButton from './LabelButton';
+
 const StyledControls = styled.div`
   background-color: white;
   border: 1px solid white;
@@ -9,6 +11,12 @@ const StyledControls = styled.div`
   grid-gap: 1rem;
   grid-template: repeat(3, auto) / repeat(2, 1fr);
   padding: 1rem;
+`;
+
+const RadioOptions = styled.div`
+  display: grid;
+  grid-gap: 1rem;
+  grid-template: auto / repeat(2, 1fr);
 `;
 
 interface IControls {
@@ -44,70 +52,74 @@ const Controls = ({
     <StyledControls>
       <div>
         <p>Show fish or bugs?</p>
-        <label htmlFor="fish">
-          Fish{' '}
-          <input
-            type="radio"
-            name="fishOrBugs"
-            id="fish"
-            value="fish"
-            checked={'fish' === fishOrBugs}
-            onChange={(e) => setFishOrBugs(e.target.value)}
-          />
-        </label>
-        <label htmlFor="bugs">
-          Bugs{' '}
-          <input
-            type="radio"
-            name="fishOrBugs"
-            id="bugs"
-            value="bugs"
-            checked={'bugs' === fishOrBugs}
-            onChange={(e) => setFishOrBugs(e.target.value)}
-          />
-        </label>
+        <RadioOptions>
+          <LabelButton selected={'fish' === fishOrBugs} htmlFor="fish">
+            Fish{' '}
+            <input
+              type="radio"
+              name="fishOrBugs"
+              id="fish"
+              value="fish"
+              checked={'fish' === fishOrBugs}
+              onChange={(e) => setFishOrBugs(e.target.value)}
+            />
+          </LabelButton>
+          <LabelButton selected={'bugs' === fishOrBugs} htmlFor="bugs">
+            Bugs{' '}
+            <input
+              type="radio"
+              name="fishOrBugs"
+              id="bugs"
+              value="bugs"
+              checked={'bugs' === fishOrBugs}
+              onChange={(e) => setFishOrBugs(e.target.value)}
+            />
+          </LabelButton>
+        </RadioOptions>
       </div>
       <div>
         <p>Select Hemisphere</p>
-        <label htmlFor="north">
-          Northern{' '}
-          <input
-            type="radio"
-            name="northOrSouth"
-            id="north"
-            value="north"
-            checked={'north' === northOrSouth}
-            onChange={(e) => setNorthOrSouth(e.target.value)}
-          />
-        </label>
-        <label htmlFor="north">
-          Southern{' '}
-          <input
-            type="radio"
-            name="northOrSouth"
-            id="south"
-            value="south"
-            checked={'south' === northOrSouth}
-            onChange={(e) => setNorthOrSouth(e.target.value)}
-          />
-        </label>
+        <RadioOptions>
+          <LabelButton selected={northOrSouth === 'north'} htmlFor="north">
+            Northern{' '}
+            <input
+              type="radio"
+              name="northOrSouth"
+              id="north"
+              value="north"
+              checked={'north' === northOrSouth}
+              onChange={(e) => setNorthOrSouth(e.target.value)}
+            />
+          </LabelButton>
+          <LabelButton selected={northOrSouth === 'south'} htmlFor="south">
+            Southern{' '}
+            <input
+              type="radio"
+              name="northOrSouth"
+              id="south"
+              value="south"
+              checked={'south' === northOrSouth}
+              onChange={(e) => setNorthOrSouth(e.target.value)}
+            />
+          </LabelButton>
+        </RadioOptions>
       </div>
-      <label>
+      <LabelButton selected={showOnlyCurrentMonth}>
         Show Only Current Month?{' '}
         <input
           type="checkbox"
           checked={showOnlyCurrentMonth}
           onChange={() => setShowOnlyCurrentMonth(!showOnlyCurrentMonth)}
         />
-      </label>
-      <label>
+      </LabelButton>
+      <LabelButton selected={showOnlyCurrentHour}>
         Show Only Current Time?{' '}
         <input
           type="checkbox"
           checked={showOnlyCurrentHour}
           onChange={() => setShowOnlyCurrentHour(!showOnlyCurrentHour)}
         />
-      </label>
+      </LabelButton>
       <label>
         Choose the date{' '}
         <input
