@@ -26,7 +26,8 @@ export const inCurrentHour = (currentHour: number, hours: string) => {
   return false;
 };
 
-function simpleSort(a: string | number, b: string | number): number {
+function simpleSort(a: any, b: any): number {
+  if (!Number.isNaN(+a) && !Number.isNaN(+b)) return +a - +b;
   if (a > b) return 1;
   if (a < b) return -1;
   return 0;
