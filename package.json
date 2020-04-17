@@ -21,7 +21,11 @@
     "styled-components": "^5.1.0",
     "typescript": "~3.7.2"
   },
+  "devDependencies": {
+    "source-map-explorer": "^2.4.2"
+  },
   "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
