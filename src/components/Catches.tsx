@@ -9,13 +9,14 @@ import {
   hemisphereAdjustment,
 } from '../utilities';
 import Timeline from './Timeline';
+import Row from './Row';
+import Cell from './Cell';
 
 const Table = styled.table`
   background-color: white;
   border: 1px solid white;
   border-radius: 8px;
   border-spacing: 1rem 0.5rem;
-  padding: 1rem;
   width: 100%;
 `;
 
@@ -23,6 +24,13 @@ interface IHeading {
   selected: boolean;
   theme: DefaultTheme;
 }
+
+const THead = styled.thead`
+  display: none;
+  @media screen and (min-width: 480px) {
+    display: table-header-group;
+  }
+`;
 
 const Heading = styled.th`
   background-color: ${({ theme, selected }: IHeading) =>
@@ -71,7 +79,7 @@ const Catches = ({
 
   return (
     <Table>
-      <thead>
+      <THead>
         <tr>
           {headings.map((heading: string) => (
             <Heading
@@ -90,18 +98,16 @@ const Catches = ({
             </Heading>
           ))}
         </tr>
-      </thead>
+      </THead>
       <tbody>
         {theCatches.map((theCatch: ICatch) => {
           return (
-            <tr key={`theCatches-${theCatch.name}`}>
+            <Row key={`theCatches-${theCatch.name}`}>
               {headings.map((heading) => {
                 return (
-                  <td
+                  <Cell
                     key={`theCatches-${theCatch.name}-${heading}`}
-                    style={{
-                      textAlign: heading === 'price' ? 'right' : 'left',
-                    }}
+                    label={heading}
                   >
                     {heading === 'hours' ? (
                       <Timeline
@@ -121,10 +127,10 @@ const Catches = ({
                     ) : (
                       theCatch[heading as keyof ICatch]
                     )}
-                  </td>
+                  </Cell>
                 );
               })}
-            </tr>
+            </Row>
           );
         })}
       </tbody>
