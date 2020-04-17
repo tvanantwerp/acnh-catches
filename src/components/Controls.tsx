@@ -9,7 +9,7 @@ const StyledControls = styled.div`
   border-radius: 8px;
   display: grid;
   grid-gap: 1rem;
-  grid-template: repeat(3, auto) / repeat(2, 1fr);
+  grid-template: repeat(4, auto) / repeat(2, 1fr);
   padding: 1rem;
 `;
 
@@ -49,98 +49,103 @@ const Controls = ({
   setTime,
 }: IControls) => {
   return (
-    <StyledControls>
-      <div>
-        <p>Show fish or bugs?</p>
-        <RadioOptions>
-          <LabelButton selected={'fish' === fishOrBugs} htmlFor="fish">
-            Fish{' '}
-            <input
-              type="radio"
-              name="fishOrBugs"
-              id="fish"
-              value="fish"
-              checked={'fish' === fishOrBugs}
-              onChange={(e) => setFishOrBugs(e.target.value)}
-            />
-          </LabelButton>
-          <LabelButton selected={'bugs' === fishOrBugs} htmlFor="bugs">
-            Bugs{' '}
-            <input
-              type="radio"
-              name="fishOrBugs"
-              id="bugs"
-              value="bugs"
-              checked={'bugs' === fishOrBugs}
-              onChange={(e) => setFishOrBugs(e.target.value)}
-            />
-          </LabelButton>
-        </RadioOptions>
-      </div>
-      <div>
-        <p>Select Hemisphere</p>
-        <RadioOptions>
-          <LabelButton selected={northOrSouth === 'north'} htmlFor="north">
-            Northern{' '}
-            <input
-              type="radio"
-              name="northOrSouth"
-              id="north"
-              value="north"
-              checked={'north' === northOrSouth}
-              onChange={(e) => setNorthOrSouth(e.target.value)}
-            />
-          </LabelButton>
-          <LabelButton selected={northOrSouth === 'south'} htmlFor="south">
-            Southern{' '}
-            <input
-              type="radio"
-              name="northOrSouth"
-              id="south"
-              value="south"
-              checked={'south' === northOrSouth}
-              onChange={(e) => setNorthOrSouth(e.target.value)}
-            />
-          </LabelButton>
-        </RadioOptions>
-      </div>
-      <LabelButton selected={showOnlyCurrentMonth}>
-        Show Only Current Month?{' '}
-        <input
-          type="checkbox"
-          checked={showOnlyCurrentMonth}
-          onChange={() => setShowOnlyCurrentMonth(!showOnlyCurrentMonth)}
-        />
-      </LabelButton>
-      <LabelButton selected={showOnlyCurrentHour}>
-        Show Only Current Time?{' '}
-        <input
-          type="checkbox"
-          checked={showOnlyCurrentHour}
-          onChange={() => setShowOnlyCurrentHour(!showOnlyCurrentHour)}
-        />
-      </LabelButton>
-      <label>
-        Choose the date{' '}
-        <input
-          type="date"
-          value={date}
-          onChange={(e) => {
-            setDate(e.target.value);
-          }}
-        />
-      </label>
-      <label>
-        Choose the time{' '}
-        <input
-          type="time"
-          value={time}
-          onChange={(e) => {
-            setTime(e.target.value);
-          }}
-        />
-      </label>
-    </StyledControls>
+    <>
+      <h1 style={{ textAlign: 'center' }}>
+        Animal Crossing New Horizons Catches
+      </h1>
+      <StyledControls>
+        <div>See fish or bugs?</div>
+        <div>Select hemisphere</div>
+        <div>
+          <RadioOptions>
+            <LabelButton selected={'fish' === fishOrBugs} htmlFor="fish">
+              Fish{' '}
+              <input
+                type="radio"
+                name="fishOrBugs"
+                id="fish"
+                value="fish"
+                checked={'fish' === fishOrBugs}
+                onChange={(e) => setFishOrBugs(e.target.value)}
+              />
+            </LabelButton>
+            <LabelButton selected={'bugs' === fishOrBugs} htmlFor="bugs">
+              Bugs{' '}
+              <input
+                type="radio"
+                name="fishOrBugs"
+                id="bugs"
+                value="bugs"
+                checked={'bugs' === fishOrBugs}
+                onChange={(e) => setFishOrBugs(e.target.value)}
+              />
+            </LabelButton>
+          </RadioOptions>
+        </div>
+        <div>
+          <RadioOptions>
+            <LabelButton selected={northOrSouth === 'north'} htmlFor="north">
+              Northern{' '}
+              <input
+                type="radio"
+                name="northOrSouth"
+                id="north"
+                value="north"
+                checked={'north' === northOrSouth}
+                onChange={(e) => setNorthOrSouth(e.target.value)}
+              />
+            </LabelButton>
+            <LabelButton selected={northOrSouth === 'south'} htmlFor="south">
+              Southern{' '}
+              <input
+                type="radio"
+                name="northOrSouth"
+                id="south"
+                value="south"
+                checked={'south' === northOrSouth}
+                onChange={(e) => setNorthOrSouth(e.target.value)}
+              />
+            </LabelButton>
+          </RadioOptions>
+        </div>
+        <LabelButton selected={showOnlyCurrentMonth}>
+          Show Only Current Month?{' '}
+          <input
+            type="checkbox"
+            checked={showOnlyCurrentMonth}
+            onChange={() => setShowOnlyCurrentMonth(!showOnlyCurrentMonth)}
+          />
+        </LabelButton>
+        <LabelButton selected={showOnlyCurrentHour}>
+          Show Only Current Time?{' '}
+          <input
+            type="checkbox"
+            checked={showOnlyCurrentHour}
+            onChange={() => setShowOnlyCurrentHour(!showOnlyCurrentHour)}
+          />
+        </LabelButton>
+        <label>
+          Choose the date{' '}
+          <input
+            type="date"
+            value={date}
+            onChange={(e) => {
+              setDate(e.target.value);
+            }}
+          />
+        </label>
+        <label>
+          Choose the time{' '}
+          <input
+            type="time"
+            value={time}
+            onChange={(e) => {
+              setTime(e.target.value);
+            }}
+          />
+        </label>
+      </StyledControls>
+    </>
   );
 };
 

@@ -11,7 +11,6 @@ import Catches from './components/Catches';
 const Container = styled.div`
   max-width: 1000px;
   margin: 0 auto;
-  width: 90%;
 
   > * {
     margin-top: 0.5rem;

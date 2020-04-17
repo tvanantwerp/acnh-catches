@@ -6,7 +6,8 @@ interface ICell {
 }
 
 const StyledCell = styled.td<ICell>`
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 
   @media screen and (min-width: 480px) {
     display: table-cell;
@@ -15,7 +16,8 @@ const StyledCell = styled.td<ICell>`
 `;
 
 const Label = styled.span`
-  text-transform: capitalize;
+  font-size: 0.9rem;
+  text-transform: uppercase;
 
   @media screen and (min-width: 480px) {
     display: none;

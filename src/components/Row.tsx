@@ -5,7 +5,6 @@ const StyledRow = styled.tr`
   border-bottom: 1px solid ${(props) => props.theme.teaGreen};
   display: grid;
   grid-gap: 0.25rem;
-  grid-template: repeat(3, auto) / repeat(auto-fit, minmax(100px, 1fr));
   margin-bottom: 0.5rem;
   padding-bottom: 0.5rem;
 
