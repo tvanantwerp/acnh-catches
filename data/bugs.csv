@@ -2,18 +2,18 @@
 Common Butterfly,Flying,160,nnnnyyyyyyyyyyyyyyynnnnn,yyyyyynnyyyy
 Yellow Butterfly,Flying,160,nnnnyyyyyyyyyyyyyyynnnnn,nnyyyynnyynn
 Tiger Butterfly,Flying,240,nnnnyyyyyyyyyyyyyyynnnnn,nnyyyyyyynnn
-Peacock Butterfly,Flying by hybrid flowers,"2,500",nnnnyyyyyyyyyyyyyyynnnnn,nnyyyynnnnnn
+Peacock Butterfly,Flying by hybrid flowers,2500,nnnnyyyyyyyyyyyyyyynnnnn,nnyyyynnnnnn
 Common Bluebottle,Flying,300,nnnnyyyyyyyyyyyyyyynnnnn,nnnyyyyynnnn
-Paper Kite Butterfly,Flying,"1,000",nnnnnnnnyyyyyyyyyyynnnnn,yyyyyyyyyyyy
-Great Purple Emperor,Flying,"3,000",nnnnyyyyyyyyyyyyyyynnnnn,nnnnyyyynnnn
+Paper Kite Butterfly,Flying,1000,nnnnnnnnyyyyyyyyyyynnnnn,yyyyyyyyyyyy
+Great Purple Emperor,Flying,3000,nnnnyyyyyyyyyyyyyyynnnnn,nnnnyyyynnnn
 Monach Butterfly,Flying,140,nnnnyyyyyyyyyyyyynnnnnnn,nnnnnnnnyyyn
-Emperor Butterfly,Flying,"4,000",yyyyyyyynnnnnnnnnyyyyyyy,yyynnyyyynny
-Agrias Butterfly,Flying,"3,000",nnnnnnnnyyyyyyyyynnnnnnn,nnnyyyyyynnn
-Raja Brooke's Birdwing,Flying by purple flowers,"2,500",nnnnnnnnyyyyyyyyynnnnnnn,yynyyyyyynny
-Queen Alexandra's Birdwing,Flying,"4,000",nnnnnnnnyyyyyyyynnnnnnnn,nnnnyyyyynnn
+Emperor Butterfly,Flying,4000,yyyyyyyynnnnnnnnnyyyyyyy,yyynnyyyynny
+Agrias Butterfly,Flying,3000,nnnnnnnnyyyyyyyyynnnnnnn,nnnyyyyyynnn
+Raja Brooke's Birdwing,Flying by purple flowers,2500,nnnnnnnnyyyyyyyyynnnnnnn,yynyyyyyynny
+Queen Alexandra's Birdwing,Flying,4000,nnnnnnnnyyyyyyyynnnnnnnn,nnnnyyyyynnn
 Moth,Flying by light,130,yyyynnnnnnnnnnnnnnnyyyyy,yyyyyyyyyyyy
-Atlas Moth,On trees,"3,000",yyyynnnnnnnnnnnnnnnyyyyy,nnnyyyyyynnn
-Madagascan Sunset Moth,Flying,"2,500",nnnnnnnnyyyyyyyynnnnnnnn,nnnyyyyyynnn
+Atlas Moth,On trees,3000,yyyynnnnnnnnnnnnnnnyyyyy,nnnyyyyyynnn
+Madagascan Sunset Moth,Flying,2500,nnnnnnnnyyyyyyyynnnnnnnn,nnnyyyyyynnn
 Long Locust,On ground,200,nnnnnnnnyyyyyyyyyyynnnnn,nnnyyyyyyyyn
 Migratory Locust,On ground,600,nnnnnnnnyyyyyyyyyyynnnnn,nnnnnnnyyyyn
 Rice Grasshopper,On ground,160,nnnnnnnnyyyyyyyyyyynnnnn,nnnnnnyyyyyn
@@ -21,9 +21,9 @@ Grasshopper,On ground,160,nnnnnnnnyyyyyyyyynnnnnnn,nnnnnnyyynnn
 Cricket,Dig at cricket noise,130,yyyyyyyynnnnnnnnnyyyyyyy,nnnnnnnnyyyn
 Bell Cricket,On ground,430,yyyyyyyynnnnnnnnnyyyyyyy,nnnnnnnnyynn
 Mantis,On flowers,430,nnnnnnnnyyyyyyyyynnnnnnn,nnyyyyyyyyyn
-Orchid Mantis,On white flowers,"2,400",nnnnnnnnyyyyyyyyynnnnnnn,nnyyyyyyyyyn
+Orchid Mantis,On white flowers,2400,nnnnnnnnyyyyyyyyynnnnnnn,nnyyyyyyyyyn
 Honeybee,Flying,200,nnnnnnnnyyyyyyyyynnnnnnn,nnyyyyynnnnn
-Wasp,Falls from shaking trees,"2,500",yyyyyyyyyyyyyyyyyyyyyyyy,yyyyyyyyyyyy
+Wasp,Falls from shaking trees,2500,yyyyyyyyyyyyyyyyyyyyyyyy,yyyyyyyyyyyy
 Brown Cicada,On trees,250,nnnnnnnnyyyyyyyyynnnnnnn,nnnnnnyynnnn
 Robust Cicada,On trees,300,nnnnnnnnyyyyyyyyynnnnnnn,nnnnnnyynnnn
 Giant Cicada,On trees,600,nnnnnnnnyyyyyyyyynnnnnnn,nnnnnnyynnnn
@@ -32,43 +32,43 @@ Evening Cicada,On trees,660,nnnnyyyynnnnnnnnyyynnnnn,nnnnnnyynnnn
 Cicada Shell,On trees,10,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnnnyynnnn
 Red Dragonfly,Flying,180,nnnnnnnnyyyyyyyyyyynnnnn,nnnnnnnnyynn
 Darner Dragonfly,Flying,230,nnnnnnnnyyyyyyyyynnnnnnn,nnnyyyyyyynn
-Banded Dragonfly,Flying,"4,500",nnnnnnnnyyyyyyyyynnnnnnn,nnnnyyyyyynn
+Banded Dragonfly,Flying,4500,nnnnnnnnyyyyyyyyynnnnnnn,nnnnyyyyyynn
 Damselfly,Flying,500,yyyyyyyyyyyyyyyyyyyyyyyy,yynnnnnnnnyy
 Firefly,Flying,300,yyyynnnnnnnnnnnnnnnyyyyy,nnnnnynnnnnn
 Mole Cricket,Underground,500,yyyyyyyyyyyyyyyyyyyyyyyy,yyyyynnnnnyy
 Pondskater,Ponds,130,nnnnnnnnyyyyyyyyyyynnnnn,nnnnyyyyynnn
 Diving Beetle,Ponds and rivers,800,nnnnnnnnyyyyyyyyyyynnnnn,nnnnyyyyynnn
-Giant Water Bug,Ponds and rivers,"2,000",yyyyyyyynnnnnnnnnnnyyyyy,nnnyyyyyynnn
+Giant Water Bug,Ponds and rivers,2000,yyyyyyyynnnnnnnnnnnyyyyy,nnnyyyyyynnn
 Stinkbug,On flowers,120,yyyyyyyyyyyyyyyyyyyyyyyy,nnyyyyyyyyyn
-Man-faced Stink Bug,On flowers,"1,000",yyyyyyyynnnnnnnnnnnyyyyy,nnyyyyyyyyyn
+Man-faced Stink Bug,On flowers,1000,yyyyyyyynnnnnnnnnnnyyyyy,nnyyyyyyyyyn
 Ladybug,On flowers,200,yyyyyyyynnnnnnnnnyyyyyyy,nnyyyynnnynn
-Tiger Beetle,On ground,"1,500",yyyyyyyyyyyyyyyyyyyyyyyy,nyyyyyyyyyyn
-Jewel Beetle,On tree stumps,"2,400",yyyyyyyyyyyyyyyyyyyyyyyy,nnnyyyyynnnn
+Tiger Beetle,On ground,1500,yyyyyyyyyyyyyyyyyyyyyyyy,nyyyyyyyyyyn
+Jewel Beetle,On tree stumps,2400,yyyyyyyyyyyyyyyyyyyyyyyy,nnnyyyyynnnn
 Violin Beetle,On tree stumps,450,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnyynnyyyn
 Citrus Long-horned Beetle,On tree stumps,350,yyyyyyyyyyyyyyyyyyyyyyyy,yyyyyyyyyyyy
-Rosalia Batesi Beetle,On tree stumps,"3,000",yyyyyyyyyyyyyyyyyyyyyyyy,nnnnyyyyynnn
+Rosalia Batesi Beetle,On tree stumps,3000,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnyyyyynnn
 Blue Weevil Beetle,On palm trees,800,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnnnyynnnn
-Dung Beetle,Pushing snowballs,"3,000",yyyyyyyyyyyyyyyyyyyyyyyy,yynnnnnnnnny
+Dung Beetle,Pushing snowballs,3000,yyyyyyyyyyyyyyyyyyyyyyyy,yynnnnnnnnny
 Earth-boring Dung Beetle,On ground,300,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnnnyyynnn
-Scarab Beetle,On trees,"10,000",yyyyyyyynnnnnnnnnnnnnnny,nnnnnnyynnnn
+Scarab Beetle,On trees,10000,yyyyyyyynnnnnnnnnnnnnnny,nnnnnnyynnnn
 Drone Beetle,On trees,200,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnnyyynnnn
-Goliath Beetle,On coconut trees,"8,000",yyyyyyyynnnnnnnnnyyyyyyy,nnnnnyyyynnn
-Saw Stag,On trees,"2,000",yyyyyyyyyyyyyyyyyyyyyyyy,nnnnnnyynnnn
-Miyama Stag,On trees,"1,000",yyyyyyyyyyyyyyyyyyyyyyyy,nnnnnnyynnnn
-Giant Stag,On trees,"10,000",yyyyyyyynnnnnnnnnnnnnnny,nnnnnnyynnnn
-Rainbow Stag,On trees,"6,000",yyyyyyyynnnnnnnnnnnyyyyy,nnnnnyyyynnn
-Cyclommatus Stag,On trees,"8,000",yyyyyyyynnnnnnnnnyyyyyyy,nnnnnnyynnnn
-Golden Stag,On trees,"12,000",yyyyyyyynnnnnnnnnyyyyyyy,nnnnnnyynnnn
-Giraffe Stag,On trees,"12,000",yyyyyyyynnnnnnnnnyyyyyyy,nnnnnnyynnnn
-Horned Dynastid,On trees,"1,350",yyyyyyyynnnnnnnnnyyyyyyy,nnnnnnyynnnn
-Horned Atlas,On trees,"8,000",yyyyyyyynnnnnnnnnyyyyyyy,nnnnnnyynnnn
-Horned Elephant,On trees,"8,000",yyyyyyyynnnnnnnnnyyyyyyy,nnnnnnyynnnn
-Horned Herucles,On trees,"12,000",yyyyyyyynnnnnnnnnyyyyyyy,nnnnnnyynnnn
+Goliath Beetle,On coconut trees,8000,yyyyyyyynnnnnnnnnyyyyyyy,nnnnnyyyynnn
+Saw Stag,On trees,2000,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnnnyynnnn
+Miyama Stag,On trees,1000,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnnnyynnnn
+Giant Stag,On trees,10000,yyyyyyyynnnnnnnnnnnnnnny,nnnnnnyynnnn
+Rainbow Stag,On trees,6000,yyyyyyyynnnnnnnnnnnyyyyy,nnnnnyyyynnn
+Cyclommatus Stag,On trees,8000,yyyyyyyynnnnnnnnnyyyyyyy,nnnnnnyynnnn
+Golden Stag,On trees,12000,yyyyyyyynnnnnnnnnyyyyyyy,nnnnnnyynnnn
+Giraffe Stag,On trees,12000,yyyyyyyynnnnnnnnnyyyyyyy,nnnnnnyynnnn
+Horned Dynastid,On trees,1350,yyyyyyyynnnnnnnnnyyyyyyy,nnnnnnyynnnn
+Horned Atlas,On trees,8000,yyyyyyyynnnnnnnnnyyyyyyy,nnnnnnyynnnn
+Horned Elephant,On trees,8000,yyyyyyyynnnnnnnnnyyyyyyy,nnnnnnyynnnn
+Horned Herucles,On trees,12000,yyyyyyyynnnnnnnnnyyyyyyy,nnnnnnyynnnn
 Walking Stick,On trees,600,nnnnyyyynnnnnnnnnyynnnnn,nnnnnnyyyyyn
 Walking Leaf,"Near trees, disguised as furniture leaf",600,yyyyyyyyyyyyyyyyyyyyyyyy,nnnnnnyynnnn
 Bagworm,Falls from shaking trees,600,yyyyyyyyyyyyyyyyyyyyyyyy,yyyyyyyyyyyy
 Ant,On rotten food,80,yyyyyyyyyyyyyyyyyyyyyyyy,yyyyyyyyyyyy
-Hermit Crab,Beach,"1,000",yyyyyyyynnnnnnnnnnnyyyyy,yyyyyyyyyyyy
+Hermit Crab,Beach,1000,yyyyyyyynnnnnnnnnnnyyyyy,yyyyyyyyyyyy
 Wharf Roach,On rocks at beach,200,yyyyyyyyyyyyyyyyyyyyyyyy,yyyyyyyyyyyy
 Fly,On trash items,60,yyyyyyyyyyyyyyyyyyyyyyyy,yyyyyyyyyyyy
 Mosquito,Flying,130,yyyynnnnnnnnnnnnnyyyyyyy,nnnnnyyyynnn
@@ -77,5 +77,5 @@ Snail,On rocks (raining),250,yyyyyyyyyyyyyyyyyyyyyyyy,yyyyyyyyyyyy
 Pill Bug,Hit rocks,250,yyyyyyyyyyyyyyyynnnnnnny,yyyyyynnyyyy
 Centipede,Hit rocks,300,nnnnnnnnnnnnnnnnyyyyyyyn,yyyyyynnyyyy
 Spider,Falls from shaking trees,480,yyyyyyyynnnnnnnnnnnyyyyy,yyyyyyyyyyyy
-Tarantula,On ground,"8,000",yyyynnnnnnnnnnnnnnnyyyyy,yyyynnnnnnyy
-Scorpion,On ground,"8,000",yyyynnnnnnnnnnnnnnnyyyyy,nnnnyyyyyynn
+Tarantula,On ground,8000,yyyynnnnnnnnnnnnnnnyyyyy,yyyynnnnnnyy
+Scorpion,On ground,8000,yyyynnnnnnnnnnnnnnnyyyyy,nnnnyyyyyynn
