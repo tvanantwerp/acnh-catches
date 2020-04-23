@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { DefaultTheme } from 'styled-components';
+import { AnimatePresence, motion } from 'framer-motion';
 
 import { ICatch, ICatchProp } from '../types';
 import {
@@ -12,7 +13,7 @@ import Timeline from './Timeline';
 import Row from './Row';
 import Cell from './Cell';
 
-const Table = styled.table`
+const Table = styled(motion.table)`
   background-color: white;
   border: 1px solid white;
   border-radius: 8px;
@@ -78,63 +79,72 @@ const Catches = ({
     );
 
   return (
-    <Table>
-      <THead>
-        <tr>
-          {headings.map((heading: string) => (
-            <Heading
-              key={`heading-${heading}`}
-              onClick={() => {
-                if ((heading as keyof ICatch) === sortBy) {
-                  setSortAsc(!sortAsc);
-                } else {
-                  setSortAsc(true);
-                  setSortBy(heading as keyof ICatch);
-                }
-              }}
-              selected={sortBy === (heading as keyof ICatch)}
-            >
-              {heading}
-            </Heading>
-          ))}
-        </tr>
-      </THead>
-      <tbody>
-        {theCatches.map((theCatch: ICatch) => {
-          return (
-            <Row key={`theCatches-${theCatch.name}`}>
-              {headings.map((heading) => {
-                return (
-                  <Cell
-                    key={`theCatches-${theCatch.name}-${heading}`}
-                    label={heading}
-                  >
-                    {heading === 'hours' ? (
-                      <Timeline
-                        theCatch={theCatch.name}
-                        times={theCatch[heading]}
-                        currentTime={hour}
-                      />
-                    ) : heading === 'months' ? (
-                      <Timeline
-                        theCatch={theCatch.name}
-                        times={hemisphereAdjustment(
-                          theCatch[heading],
-                          northOrSouth
-                        )}
-                        currentTime={month - 1}
-                      />
-                    ) : (
-                      theCatch[heading as keyof ICatch]
-                    )}
-                  </Cell>
-                );
-              })}
-            </Row>
-          );
-        })}
-      </tbody>
-    </Table>
+    <AnimatePresence>
+      <Table
+        initial={{
+          opacity: 0,
+          y: 50,
+        }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -10 }}
+      >
+        <THead>
+          <tr>
+            {headings.map((heading: string) => (
+              <Heading
+                key={`heading-${heading}`}
+                onClick={() => {
+                  if ((heading as keyof ICatch) === sortBy) {
+                    setSortAsc(!sortAsc);
+                  } else {
+                    setSortAsc(true);
+                    setSortBy(heading as keyof ICatch);
+                  }
+                }}
+                selected={sortBy === (heading as keyof ICatch)}
+              >
+                {heading}
+              </Heading>
+            ))}
+          </tr>
+        </THead>
+        <tbody>
+          {theCatches.map((theCatch: ICatch) => {
+            return (
+              <Row key={`theCatches-${theCatch.name}`}>
+                {headings.map((heading) => {
+                  return (
+                    <Cell
+                      key={`theCatches-${theCatch.name}-${heading}`}
+                      label={heading}
+                    >
+                      {heading === 'hours' ? (
+                        <Timeline
+                          theCatch={theCatch.name}
+                          times={theCatch[heading]}
+                          currentTime={hour}
+                        />
+                      ) : heading === 'months' ? (
+                        <Timeline
+                          theCatch={theCatch.name}
+                          times={hemisphereAdjustment(
+                            theCatch[heading],
+                            northOrSouth
+                          )}
+                          currentTime={month - 1}
+                        />
+                      ) : (
+                        theCatch[heading as keyof ICatch]
+                      )}
+                    </Cell>
+                  );
+                })}
+              </Row>
+            );
+          })}
+        </tbody>
+      </Table>
+    </AnimatePresence>
   );
 };
 
