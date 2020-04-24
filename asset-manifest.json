@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/acnh-catches/static/js/main.d2015bc6.chunk.js",
-    "main.js.map": "/acnh-catches/static/js/main.d2015bc6.chunk.js.map",
+    "main.js": "/acnh-catches/static/js/main.bd40eb14.chunk.js",
+    "main.js.map": "/acnh-catches/static/js/main.bd40eb14.chunk.js.map",
     "runtime-main.js": "/acnh-catches/static/js/runtime-main.d0f9d7ea.js",
     "runtime-main.js.map": "/acnh-catches/static/js/runtime-main.d0f9d7ea.js.map",
     "static/js/2.802fe5e1.chunk.js": "/acnh-catches/static/js/2.802fe5e1.chunk.js",
     "static/js/2.802fe5e1.chunk.js.map": "/acnh-catches/static/js/2.802fe5e1.chunk.js.map",
     "index.html": "/acnh-catches/index.html",
-    "precache-manifest.c1098905003ce7ffa3d5afee2a9482a2.js": "/acnh-catches/precache-manifest.c1098905003ce7ffa3d5afee2a9482a2.js",
+    "precache-manifest.e2f22b21399271641feb107d130371c4.js": "/acnh-catches/precache-manifest.e2f22b21399271641feb107d130371c4.js",
     "service-worker.js": "/acnh-catches/service-worker.js",
     "static/js/2.802fe5e1.chunk.js.LICENSE.txt": "/acnh-catches/static/js/2.802fe5e1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d0f9d7ea.js",
     "static/js/2.802fe5e1.chunk.js",
-    "static/js/main.d2015bc6.chunk.js"
+    "static/js/main.bd40eb14.chunk.js"
   ]
 }
