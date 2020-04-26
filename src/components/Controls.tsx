@@ -5,13 +5,9 @@ import LabelButton from './LabelButton';
 import TextInput from './TextInput';
 
 const StyledControls = styled.div`
-  background-color: ${(props) => props.theme.containerBackgroundColor};
-  border: 1px solid ${(props) => props.theme.containerBackgroundColor};
-  border-radius: 8px;
   display: grid;
   grid-gap: 1rem;
   grid-template: repeat(4, auto) / repeat(2, 1fr);
-  padding: 1rem;
 `;
 
 const RadioOptions = styled.div`

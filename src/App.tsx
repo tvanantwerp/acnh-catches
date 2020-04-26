@@ -5,18 +5,9 @@ import { csvParse } from 'd3-dsv';
 
 import { ICatch } from './types';
 import { Theme, GlobalStyle } from './Theme';
+import Container from './components/Container';
 import Controls from './components/Controls';
 import Catches from './components/Catches';
-
-const Container = styled.div`
-  max-width: 1000px;
-  margin: 0 auto;
-
-  > * {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-`;
 
 const App: React.FC = () => {
   const now = new Date();
@@ -70,6 +61,8 @@ const App: React.FC = () => {
           setShowOnlyCurrentMonth={setShowOnlyCurrentMonth}
           setShowOnlyCurrentHour={setShowOnlyCurrentHour}
         ></Controls>
+      </Container>
+      <Container>
         {fishOrBugs === 'fish' && fish && (
           <Catches
             data={fish}
@@ -98,6 +91,41 @@ const App: React.FC = () => {
             showOnlyCurrentMonth={showOnlyCurrentMonth}
           />
         )}
+      </Container>
+      <Container>
+        <p>
+          Want an easier way to figure what what fish and bugs are available
+          when in Animal Crossing: New Horizons? Want a table that's easy to
+          scan and sort? You've come to the right place! Choose your criteria to
+          filter the table and click the headings to sort entries.
+        </p>
+        <p>
+          Tool created by{' '}
+          <a
+            href="https://tomvanantwerp.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Tom VanAntwerp
+          </a>
+          . Follow Tom on{' '}
+          <a
+            href="https://twitter.com/tvanantwerp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            twitter
+          </a>
+          . Report any issues{' '}
+          <a
+            href="https://github.com/tvanantwerp/acnh-catches/issues"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            here
+          </a>
+          .
+        </p>
       </Container>
     </ThemeProvider>
   );

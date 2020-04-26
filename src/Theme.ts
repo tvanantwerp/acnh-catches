@@ -26,4 +26,9 @@ export const GlobalStyle = createGlobalStyle`
     color: ${(props) => props.theme.darkBrown};
     font-size: 16px;
   }
+
+  a {
+    color: ${(props) => props.theme.buttonBlueHover};
+    text-decoration: none;
+  }
 `;

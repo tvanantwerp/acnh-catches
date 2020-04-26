@@ -13,14 +13,6 @@ import Timeline from './Timeline';
 import Row from './Row';
 import Cell from './Cell';
 
-const Table = styled(motion.table)`
-  background-color: ${(props) => props.theme.containerBackgroundColor};
-  border: 1px solid ${(props) => props.theme.containerBackgroundColor};
-  border-radius: 8px;
-  border-spacing: 1rem 0.5rem;
-  width: 100%;
-`;
-
 interface IHeading {
   selected: boolean;
   theme: DefaultTheme;
@@ -82,7 +74,8 @@ const Catches = ({
 
   return (
     <AnimatePresence>
-      <Table
+      <motion.table
+        style={{ borderSpacing: '1rem 0.5rem', width: '100%' }}
         initial={{
           opacity: 0,
           y: 50,
@@ -143,7 +136,7 @@ const Catches = ({
             );
           })}
         </tbody>
-      </Table>
+      </motion.table>
     </AnimatePresence>
   );
 };

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledRow = styled.tr`
-  border-bottom: 1px solid ${(props) => props.theme.teaGreen};
+  border-bottom: 1px solid rgba(225, 217, 170, 1);
   display: grid;
   grid-gap: 0.25rem;
   margin-bottom: 0.5rem;
