@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import LabelButton from './LabelButton';
+import TextInput from './TextInput';
 
 const StyledControls = styled.div`
   background-color: white;
@@ -124,26 +125,20 @@ const Controls = ({
             onChange={() => setShowOnlyCurrentHour(!showOnlyCurrentHour)}
           />
         </LabelButton>
-        <label>
-          Choose the date{' '}
-          <input
-            type="date"
-            value={date}
-            onChange={(e) => {
-              setDate(e.target.value);
-            }}
-          />
-        </label>
-        <label>
-          Choose the time{' '}
-          <input
-            type="time"
-            value={time}
-            onChange={(e) => {
-              setTime(e.target.value);
-            }}
-          />
-        </label>
+        <TextInput
+          label="Choose the date"
+          id="date-input"
+          type="date"
+          value={date}
+          update={setDate}
+        />
+        <TextInput
+          label="Choose the time"
+          id="time-input"
+          type="time"
+          value={time}
+          update={setTime}
+        />
       </StyledControls>
     </>
   );

@@ -18,7 +18,7 @@ const StyledLabelButton = styled(motion.label)`
   border: 1px solid
     ${({ selected, theme }: IStyledLabelButton) =>
       selected ? theme.teaGreen : theme.lightGreen};
-  border-radius: 4px;
+  border-radius: 30px;
   color: ${({ theme }: IStyledLabelButton) => theme.darkBrown};
   cursor: pointer;
   display: block;
