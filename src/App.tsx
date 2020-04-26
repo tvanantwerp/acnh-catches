@@ -32,8 +32,8 @@ const App: React.FC = () => {
     }-${now.getDate() <= 9 ? '0' + now.getDate() : now.getDate()}`
   );
   const [time, setTime] = useState(
-    `${now.getHours() < 9 ? '0' + now.getHours() : now.getHours()}:${
-      now.getMinutes() < 9 ? '0' + now.getMinutes() : now.getMinutes()
+    `${now.getHours() <= 9 ? '0' + now.getHours() : now.getHours()}:${
+      now.getMinutes() <= 9 ? '0' + now.getMinutes() : now.getMinutes()
     }`
   );
   const [showOnlyCurrentMonth, setShowOnlyCurrentMonth] = useState(false);
