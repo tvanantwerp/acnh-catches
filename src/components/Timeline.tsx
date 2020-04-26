@@ -3,12 +3,11 @@ import React, { useEffect, useRef } from 'react';
 import { Theme } from '../Theme';
 
 interface ITimes {
-  theCatch: string;
   times: string;
   currentTime: number;
 }
 
-const Times = ({ theCatch, times, currentTime }: ITimes) => {
+const Times = ({ times, currentTime }: ITimes) => {
   const ref = useRef<HTMLCanvasElement>(null);
   const height = 60;
   const width = 240;

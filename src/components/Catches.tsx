@@ -120,13 +120,11 @@ const Catches = ({
                     >
                       {heading === 'hours' ? (
                         <Timeline
-                          theCatch={theCatch.name}
                           times={theCatch[heading]}
                           currentTime={hour}
                         />
                       ) : heading === 'months' ? (
                         <Timeline
-                          theCatch={theCatch.name}
                           times={hemisphereAdjustment(
                             theCatch[heading],
                             northOrSouth
