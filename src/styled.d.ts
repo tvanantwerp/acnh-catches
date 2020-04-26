@@ -9,5 +9,6 @@ declare module 'styled-components' {
     fontFamily: string;
     lightGreen: string;
     teaGreen: string;
+    fontSize: string;
   }
 }

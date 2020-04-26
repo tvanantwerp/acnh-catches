@@ -6,6 +6,7 @@ export const Theme: DefaultTheme = {
   fontFamily: '"Asap", sans-serif',
   lightGreen: '#9ad2cb',
   teaGreen: '#d7ebba',
+  fontSize: '16px',
 };
 
 export const GlobalStyle = createGlobalStyle`
@@ -18,5 +19,6 @@ export const GlobalStyle = createGlobalStyle`
   html, body {
     background-color: ${(props) => props.theme.backgroundColor};
     color: ${(props) => props.theme.darkBrown};
+    font-size: 16px;
   }
 `;
