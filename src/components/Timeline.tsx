@@ -1,7 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 
-import { Theme } from '../Theme';
-
 interface ITimes {
   times: string;
   currentTime: number;
@@ -25,11 +23,11 @@ const Times = ({ times, currentTime }: ITimes) => {
           const color =
             time === 'y'
               ? i === currentTime
-                ? '#9cd08f'
-                : Theme.teaGreen
+                ? 'rgba(105, 206, 107, 1)'
+                : 'rgba(161, 222, 164, 1)'
               : i === currentTime
-              ? '#cccccc'
-              : '#dedede';
+              ? 'rgba(200, 190, 150, 1)'
+              : 'rgba(225, 217, 170, 1)';
           ctx.fillStyle = color;
           ctx.fillRect(i * (width / count), 0, width / count, height);
         });

@@ -13,17 +13,40 @@ interface ILabelButton {
 }
 
 const StyledLabelButton = styled(motion.label)`
-  background-color: ${({ selected, theme }: IStyledLabelButton) =>
-    selected ? theme.teaGreen : theme.lightGreen};
-  border: 1px solid
+  background-color: ${(props) => props.theme.buttonBlue};
+  border: 3px solid
     ${({ selected, theme }: IStyledLabelButton) =>
-      selected ? theme.teaGreen : theme.lightGreen};
+      selected ? theme.buttonBlueHover : theme.buttonBlue};
   border-radius: 30px;
   color: ${({ theme }: IStyledLabelButton) => theme.darkBrown};
   cursor: pointer;
   display: block;
   padding: 5px 0;
+  position: relative;
   text-align: center;
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out,
+    border 0.1s ease-in-out;
+
+  &:hover {
+    background-color: ${(props) => props.theme.buttonBlueHover};
+    border: 3px solid ${(props) => props.theme.buttonBlueHover};
+    color: white;
+  }
+
+  &::after {
+    background-color: ${(props) => props.theme.buttonBlueHover};
+    border: 1px solid transparent;
+    border-radius: 50%;
+    content: '✔';
+    color: white;
+    display: ${(props) => (props.selected ? 'block' : 'none')};
+    font-size: 12px;
+    height: 15px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    width: 15px;
+  }
 
   input {
     display: none;

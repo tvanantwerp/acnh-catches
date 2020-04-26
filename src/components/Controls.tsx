@@ -5,8 +5,8 @@ import LabelButton from './LabelButton';
 import TextInput from './TextInput';
 
 const StyledControls = styled.div`
-  background-color: white;
-  border: 1px solid white;
+  background-color: ${(props) => props.theme.containerBackgroundColor};
+  border: 1px solid ${(props) => props.theme.containerBackgroundColor};
   border-radius: 8px;
   display: grid;
   grid-gap: 1rem;

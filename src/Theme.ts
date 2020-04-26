@@ -1,9 +1,14 @@
 import { DefaultTheme, createGlobalStyle } from 'styled-components';
 
 export const Theme: DefaultTheme = {
-  backgroundColor: '#6AC1DB',
-  darkBrown: '#450000',
+  backgroundColor: 'rgba(238, 231, 185, 1)',
+  containerBackgroundColor: 'rgba(255, 249, 227, 1)',
+  darkBrown: 'rgba(121, 101, 81, 1)',
   fontFamily: '"Asap", sans-serif',
+  buttonBlue: 'rgba(210, 237, 244, 1)',
+  buttonBlueHover: 'rgba(60, 190, 182, 1)',
+  labelYellow: 'rgba(253, 235, 164, 1)',
+  labelYellowHover: 'rgba(255, 207, 10, 1)',
   lightGreen: '#9ad2cb',
   teaGreen: '#d7ebba',
   fontSize: '16px',

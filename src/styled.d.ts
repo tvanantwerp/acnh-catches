@@ -5,8 +5,13 @@ import 'styled-components';
 declare module 'styled-components' {
   export interface DefaultTheme {
     backgroundColor: string;
+    containerBackgroundColor: string;
     darkBrown: string;
     fontFamily: string;
+    buttonBlue: string;
+    buttonBlueHover: string;
+    labelYellow: string;
+    labelYellowHover: string;
     lightGreen: string;
     teaGreen: string;
     fontSize: string;

@@ -14,8 +14,8 @@ import Row from './Row';
 import Cell from './Cell';
 
 const Table = styled(motion.table)`
-  background-color: white;
-  border: 1px solid white;
+  background-color: ${(props) => props.theme.containerBackgroundColor};
+  border: 1px solid ${(props) => props.theme.containerBackgroundColor};
   border-radius: 8px;
   border-spacing: 1rem 0.5rem;
   width: 100%;
@@ -35,15 +35,17 @@ const THead = styled.thead`
 
 const Heading = styled.th`
   background-color: ${({ theme, selected }: IHeading) =>
-    selected ? theme.teaGreen : theme.lightGreen};
-  border: 1px solid
-    ${({ theme, selected }: IHeading) =>
-      selected ? theme.teaGreen : theme.lightGreen};
+    selected ? theme.labelYellowHover : theme.labelYellow};
   border-radius: 4px;
-  color: ${({ theme, selected }: IHeading) => theme.darkBrown};
+  color: ${(props) => props.theme.darkBrown};
   cursor: pointer;
   padding: 5px 0;
   text-transform: capitalize;
+  transition: background-color 0.1s ease-in-out;
+
+  &:hover {
+    background-color: ${(props) => props.theme.labelYellowHover};
+  }
 `;
 
 const Catches = ({

@@ -14,14 +14,13 @@ const Container = styled.div`
   border-bottom: 2px solid transparent;
   display: grid;
   grid-template: repeat(2, auto) / 1fr;
-
-  &:hover {
-    border-bottom: 2px solid ${(props) => props.theme.lightGreen};
-  }
+  padding-bottom: 5px;
+  transition: border 0.1s ease-in-out;
 
   &:active,
-  &:focus {
-    border-bottom: 2px solid ${(props) => props.theme.teaGreen};
+  &:focus,
+  &:hover {
+    border-bottom: 2px solid ${(props) => props.theme.buttonBlueHover};
   }
 
   @media screen and (min-width: 480px) {
@@ -39,7 +38,9 @@ const StyledLabel = styled.label`
 `;
 
 const StyledInput = styled.input`
+  background-color: ${(props) => props.theme.containerBackgroundColor};
   border: 0;
+  color: ${(props) => props.theme.darkBrown};
   font-size: ${(props) => props.theme.fontSize};
   padding: 0;
   text-align: center;
