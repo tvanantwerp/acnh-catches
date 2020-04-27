@@ -47,12 +47,12 @@ const Controls = ({
 }: IControls) => {
   return (
     <>
-      <h1 style={{ textAlign: 'center' }}>
-        Animal Crossing New Horizons Catches
+      <h1 style={{ fontSize: '28px', textAlign: 'center' }}>
+        Catching Fish and Bugs in <em>Animal Crossing: New Horizons</em>
       </h1>
       <StyledControls>
-        <div>See fish or bugs?</div>
-        <div>Select hemisphere</div>
+        <div style={{ textAlign: 'center' }}>See fish or bugs?</div>
+        <div style={{ textAlign: 'center' }}>Select hemisphere</div>
         <div>
           <RadioOptions>
             <LabelButton selected={'fish' === fishOrBugs} htmlFor="fish">
