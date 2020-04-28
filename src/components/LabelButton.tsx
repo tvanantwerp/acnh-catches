@@ -33,24 +33,22 @@ const StyledLabelButton = styled(motion.label)`
     color: white;
   }
 
-  &::after {
-    background-color: ${(props) => props.theme.buttonBlueHover};
-    border: 1px solid transparent;
-    border-radius: 50%;
-    content: '✔';
-    color: white;
-    display: ${(props) => (props.selected ? 'block' : 'none')};
-    font-size: 12px;
-    height: 15px;
-    position: absolute;
-    right: 0;
-    top: -10px;
-    width: 15px;
-  }
-
   input {
     display: none;
   }
+`;
+
+const Checkmark = styled(motion.div)`
+  background-color: ${(props) => props.theme.buttonBlueHover};
+  border: 1px solid transparent;
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+  height: 15px;
+  position: absolute;
+  right: 0;
+  top: -10px;
+  width: 15px;
 `;
 
 const LabelButton: React.FC<ILabelButton> = ({ selected, children }) => (
@@ -60,6 +58,15 @@ const LabelButton: React.FC<ILabelButton> = ({ selected, children }) => (
     animate={{ scale: 1 }}
   >
     {children}
+    {selected && (
+      <Checkmark
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        exit={{ scale: 0 }}
+      >
+        ✔
+      </Checkmark>
+    )}
   </StyledLabelButton>
 );
 
