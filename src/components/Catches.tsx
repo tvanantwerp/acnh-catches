@@ -124,7 +124,7 @@ const Catches = ({
                             theCatch[heading],
                             northOrSouth
                           )}
-                          currentTime={month - 1}
+                          currentTime={month}
                         />
                       ) : (
                         theCatch[heading as keyof ICatch]
