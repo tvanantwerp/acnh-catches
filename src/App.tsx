@@ -66,7 +66,7 @@ const App: React.FC = () => {
             sortAsc={sortAsc}
             setSortBy={setSortBy}
             setSortAsc={setSortAsc}
-            month={DateTime.fromISO(date).toFormat('L')}
+            month={+DateTime.fromISO(date).toFormat('L')}
             hour={+time.split(':')[0]}
             showOnlyCurrentHour={showOnlyCurrentHour}
             showOnlyCurrentMonth={showOnlyCurrentMonth}
@@ -80,7 +80,7 @@ const App: React.FC = () => {
             sortAsc={sortAsc}
             setSortBy={setSortBy}
             setSortAsc={setSortAsc}
-            month={DateTime.fromISO(date).toFormat('L')}
+            month={+DateTime.fromISO(date).toFormat('L')}
             hour={+time.split(':')[0]}
             showOnlyCurrentHour={showOnlyCurrentHour}
             showOnlyCurrentMonth={showOnlyCurrentMonth}
