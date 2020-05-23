@@ -35,7 +35,12 @@ const Times = ({ times, currentTime }: ITimes) => {
     }
   }, [currentTime, ref, times]);
 
-  return <canvas style={{ height: '25px', width: '100%' }} ref={ref} />;
+  return (
+    <canvas
+      style={{ height: '25px', width: '100%', borderRadius: '4px' }}
+      ref={ref}
+    />
+  );
 };
 
 export default Times;
