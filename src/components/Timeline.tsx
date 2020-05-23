@@ -19,18 +19,18 @@ const Times = ({ times, currentTime }: ITimes) => {
       const count = times.length;
 
       if (ctx) {
-        times.split('').forEach((time, i) => {
+        for (const [i, time] of Object.entries(times)) {
           const color =
             time === 'y'
-              ? i === currentTime
+              ? +i === currentTime
                 ? 'rgba(105, 206, 107, 1)'
                 : 'rgba(161, 222, 164, 1)'
-              : i === currentTime
+              : +i === currentTime
               ? 'rgba(200, 190, 150, 1)'
               : 'rgba(225, 217, 170, 1)';
           ctx.fillStyle = color;
-          ctx.fillRect(i * (width / count), 0, width / count, height);
-        });
+          ctx.fillRect(+i * (width / count), 0, width / count, height);
+        }
       }
     }
   }, [currentTime, ref, times]);
