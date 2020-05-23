@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { DateTime } from 'luxon';
 
 interface ITextInput {
   label: string;
@@ -65,7 +66,11 @@ const TextInput: React.FC<ITextInput> = ({
         name={id}
         type={type}
         value={value}
-        onChange={(e) => update(e.target.value)}
+        onChange={(e) => {
+          type === 'date'
+            ? update(DateTime.fromISO(e.target.value).toFormat('yyyy-MM-dd'))
+            : update(e.target.value);
+        }}
       />
     </Container>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import LabelButton from './LabelButton';
-import TextInput from './TextInput';
+import DateTimeInput from './DateTimeInput';
 
 const StyledControls = styled.div`
   display: grid;
@@ -121,14 +121,14 @@ const Controls = ({
             onChange={() => setShowOnlyCurrentHour(!showOnlyCurrentHour)}
           />
         </LabelButton>
-        <TextInput
+        <DateTimeInput
           label="Choose the date"
           id="date-input"
           type="date"
           value={date}
           update={setDate}
         />
-        <TextInput
+        <DateTimeInput
           label="Choose the time"
           id="time-input"
           type="time"
