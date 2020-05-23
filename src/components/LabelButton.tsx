@@ -43,7 +43,7 @@ const Checkmark = styled(motion.div)`
   border: 1px solid transparent;
   border-radius: 50%;
   color: white;
-  font-size: 12px;
+  font-size: 10px;
   height: 15px;
   position: absolute;
   right: 0;
