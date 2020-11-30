@@ -27,6 +27,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
+    animation: background 5s linear infinite;
     background-image: url('./bg.svg');
     background-repeat: repeat;
     background-color: ${(props) => props.theme.backgroundColor};
@@ -36,5 +37,15 @@ export const GlobalStyle = createGlobalStyle`
   a {
     color: ${(props) => props.theme.buttonBlueHover};
     text-decoration: none;
+  }
+
+  @keyframes background {
+    0% {
+      background-position: 0 0;
+    }
+
+    100% {
+      background-position: 100px 100px;
+    }
   }
 `;
