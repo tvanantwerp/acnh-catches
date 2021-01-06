@@ -26,12 +26,18 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 16px;
   }
 
-  html {
-    animation: background 5s linear infinite;
+  .background {
+    animation: background 10s linear infinite;
     background-image: url('./bg.svg');
     background-repeat: repeat;
     background-color: ${(props) => props.theme.backgroundColor};
-
+    bottom: 0;
+    left: 0;
+    margin: -100px -100px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
   }
 
   a {
@@ -41,11 +47,11 @@ export const GlobalStyle = createGlobalStyle`
 
   @keyframes background {
     0% {
-      background-position: 0 0;
+      transform: translate3D(0, 0, 0);
     }
 
     100% {
-      background-position: 100px 100px;
+      transform: translate3D(100px, 100px, 0);
     }
   }
 `;

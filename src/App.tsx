@@ -41,6 +41,7 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={Theme}>
       <GlobalStyle />
+      <div className="background"></div>
       <Container>
         <Controls
           fishOrBugs={fishOrBugs}
