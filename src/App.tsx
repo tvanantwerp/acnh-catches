@@ -41,6 +41,7 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={Theme}>
       <GlobalStyle />
+      <div className="background"></div>
       <Container>
         <Controls
           fishOrBugs={fishOrBugs}
@@ -89,7 +90,7 @@ const App: React.FC = () => {
       </Container>
       <Container>
         <p>
-          Want an easier way to figure what what fish and bugs are available
+          Want an easier way to figure out what what fish and bugs are available
           when in Animal Crossing: New Horizons? Want a table that's easy to
           scan and sort? You've come to the right place! Choose your criteria to
           filter the table and click the headings to sort entries.

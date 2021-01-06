@@ -26,15 +26,32 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 16px;
   }
 
-  html {
+  .background {
+    animation: background 10s linear infinite;
     background-image: url('./bg.svg');
     background-repeat: repeat;
     background-color: ${(props) => props.theme.backgroundColor};
-
+    bottom: 0;
+    left: 0;
+    margin: -100px -100px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
   }
 
   a {
     color: ${(props) => props.theme.buttonBlueHover};
     text-decoration: none;
+  }
+
+  @keyframes background {
+    0% {
+      transform: translate3D(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3D(100px, 100px, 0);
+    }
   }
 `;
