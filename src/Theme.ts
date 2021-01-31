@@ -1,7 +1,7 @@
 import { DefaultTheme, createGlobalStyle } from 'styled-components';
 
 export const Theme: DefaultTheme = {
-  backgroundColor: 'rgba(238, 231, 185, 1)',
+  backgroundColor: 'rgba(161, 222, 164, 1)',
   containerBackgroundColor: 'rgba(255, 249, 227, 1)',
   darkBrown: 'rgba(121, 101, 81, 1)',
   fontFamily: '"Asap", sans-serif',
@@ -27,16 +27,15 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .background {
-    animation: background 10s linear infinite;
+    animation: background 15s linear infinite;
     background-image: url('./bg.svg');
     background-repeat: repeat;
     background-color: ${(props) => props.theme.backgroundColor};
     bottom: 0;
-    left: 0;
-    margin: -100px -100px;
+    left: -100px;
     position: fixed;
     right: 0;
-    top: 0;
+    top: -100px;
     z-index: -1;
   }
 
