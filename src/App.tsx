@@ -91,7 +91,7 @@ const App: React.FC = () => {
       <Container>
         <p>
           Want an easier way to figure out what what fish and bugs are available
-          when in Animal Crossing: New Horizons? Want a table that's easy to
+          when in <a href="https://amzn.to/3hBciy5" target="_blank" rel="noopener noreferrer">Animal Crossing: New Horizons</a>? Want a table that's easy to
           scan and sort? You've come to the right place! Choose your criteria to
           filter the table and click the headings to sort entries.
         </p>
